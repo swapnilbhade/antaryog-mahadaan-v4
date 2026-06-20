@@ -1,0 +1,1994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Antar Yog Daan | Sacred Giving, Real Impact</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231C2B4A'/><text y='24' x='5' font-size='22' font-family='serif'>🪔</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Offer your daan through Antar Yog Foundation — feeding the hungry, supporting children, serving Sadhus and preserving Sanatan Dharma. 80G certified. 100% transparent.">
+<style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary:       #1C2B4A;
+      --accent:        #C17B2A;
+      --accent-hover:  #A86820;
+      --accent-light:  #F7EDDC;
+      --green:         #1A6B5A;
+      --text:          #1A1A1A;
+      --text-2:        #555564;
+      --bg:            #FFFFFF;
+      --bg-alt:        #F8F6F3;
+      --border:        #E2D9CC;
+      --shadow:        0 2px 16px rgba(0,0,0,0.07);
+      --shadow-lg:     0 8px 32px rgba(0,0,0,0.12);
+      --radius:        8px;
+      --radius-lg:     14px;
+      --gold:          #F5C471;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── TYPOGRAPHY ─── */
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.2;
+      color: var(--primary);
+    }
+    p { color: var(--text-2); line-height: 1.75; }
+
+    /* ─── LAYOUT ─── */
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+    .section   { padding: 88px 0; }
+    .section-alt { background: var(--bg-alt); }
+
+    .section-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 10px;
+    }
+    .divider {
+      width: 44px; height: 3px;
+      background: var(--accent);
+      border-radius: 100px;
+      margin: 14px 0 28px;
+    }
+    .text-center { text-align: center; }
+    .text-center .divider { margin: 14px auto 28px; }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+    @media (max-width: 960px) {
+      .grid-3 { grid-template-columns: repeat(2, 1fr); }
+      .grid-4 { grid-template-columns: repeat(2, 1fr); }
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .grid-3, .grid-4 { grid-template-columns: 1fr; }
+    }
+
+    /* ─── BUTTONS ─── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.92rem; font-weight: 600;
+      text-decoration: none; cursor: pointer;
+      border: 2px solid transparent;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .btn-primary { background: var(--primary); color: #FFF; }
+    .btn-primary:hover { background: var(--accent); box-shadow: 0 4px 16px rgba(193,123,42,0.28); transform: translateY(-1px); }
+
+    .btn-outline { background: transparent; color: var(--primary); border-color: var(--primary); }
+    .btn-outline:hover { background: var(--primary); color: #FFF; }
+
+    .btn-accent { background: var(--accent); color: #FFF; }
+    .btn-accent:hover { background: var(--accent-hover); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(193,123,42,0.28); }
+
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; border-radius: var(--radius);
+      font-family: 'Inter', sans-serif; font-size: 0.92rem; font-weight: 600;
+      text-decoration: none; cursor: pointer;
+      background: transparent; color: #fff;
+      border: 2px solid rgba(255,255,255,0.4);
+      transition: all 0.2s ease; white-space: nowrap;
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.7); }
+
+    .btn-lg { padding: 17px 34px; font-size: 1rem; }
+
+    /* ─── NAVIGATION ─── */
+    .nav {
+      position: sticky; top: 0; z-index: 200;
+      background: #FFF;
+      border-bottom: 1px solid var(--border);
+      transition: box-shadow 0.2s;
+    }
+    .nav.scrolled { box-shadow: 0 2px 16px rgba(0,0,0,0.08); }
+
+    /* ─── WHATSAPP FLOAT ─── */
+    .wa-float {
+      position: fixed; bottom: 28px; right: 28px; z-index: 300;
+      width: 52px; height: 52px; border-radius: 50%;
+      background: #25D366;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 18px rgba(37,211,102,0.45);
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 24px rgba(37,211,102,0.55); }
+    .wa-float svg { width: 28px; height: 28px; fill: #fff; }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 66px; gap: 24px;
+    }
+    .nav-logo { text-decoration: none; display: flex; flex-direction: column; }
+    .nav-logo-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.18rem; font-weight: 700;
+      color: var(--primary); line-height: 1.1;
+    }
+    .nav-logo-tag {
+      font-size: 0.62rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--accent);
+    }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a {
+      font-size: 0.85rem; font-weight: 500;
+      color: var(--text-2); text-decoration: none; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-cta {
+      padding: 9px 20px;
+      background: var(--primary); color: #FFF;
+      border-radius: var(--radius);
+      font-size: 0.85rem; font-weight: 600;
+      text-decoration: none; transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--accent); }
+
+    /* ─── MOBILE NAV ─── */
+    .nav-burger {
+      display: none;
+      background: none; border: none; cursor: pointer;
+      font-size: 1.4rem; color: var(--primary); padding: 4px 8px;
+      line-height: 1;
+    }
+    @media (max-width: 760px) {
+      .nav-burger { display: block; }
+      .nav-cta { display: none; }
+      .nav-links {
+        display: none;
+        position: absolute; top: 66px; left: 0; right: 0;
+        background: #fff;
+        border-bottom: 1px solid var(--border);
+        flex-direction: column; padding: 16px 24px; gap: 0;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        z-index: 199;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links li { border-bottom: 1px solid var(--border); }
+      .nav-links li:last-child { border-bottom: none; }
+      .nav-links a { display: block; padding: 13px 0; font-size: 0.95rem; }
+    }
+
+    /* ─── HERO ─── */
+    .hero { padding: 72px 0 64px; background: #FFF; border-bottom: 1px solid var(--border); }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 64px; align-items: start;
+    }
+    @media (max-width: 960px) {
+      .hero-inner { grid-template-columns: 1fr; }
+    }
+
+    .hero-pill {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: var(--accent-light);
+      color: var(--accent);
+      padding: 5px 14px;
+      border-radius: 100px;
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      color: var(--primary);
+      margin-bottom: 18px;
+      line-height: 1.13;
+    }
+    .hero-title .accent { color: var(--accent); }
+
+    .hero-desc {
+      font-size: 1.06rem;
+      max-width: 500px;
+      margin-bottom: 32px;
+    }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; }
+
+    .trust-bar { display: flex; gap: 20px; flex-wrap: wrap; }
+    .trust-item {
+      display: flex; align-items: center; gap: 7px;
+      font-size: 0.82rem; font-weight: 500; color: var(--text-2);
+    }
+    .trust-dot {
+      width: 17px; height: 17px; border-radius: 50%;
+      background: var(--accent);
+      display: flex; align-items: center; justify-content: center;
+      color: #FFF; font-size: 9px; font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    /* ─── DONATE FORM CARD ─── */
+    .donate-card {
+      background: #FFF;
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: 0 4px 36px rgba(28,43,74,0.13);
+      border: 1px solid var(--border);
+      position: sticky; top: 82px;
+    }
+    .donate-card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem; color: var(--primary);
+      margin-bottom: 3px;
+    }
+    .donate-card-sub { font-size: 0.82rem; margin-bottom: 22px; }
+
+    .form-group { margin-bottom: 18px; }
+    .form-label {
+      display: block;
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--primary); margin-bottom: 7px;
+    }
+    .form-select {
+      width: 100%; padding: 11px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem; color: var(--text);
+      background: #FFF;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='7'%3E%3Cpath d='M1 1l4.5 5L10 1' stroke='%231C2B4A' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 13px center;
+      appearance: none; cursor: pointer;
+      transition: border-color 0.2s;
+    }
+    .form-select:focus { outline: none; border-color: var(--primary); }
+
+    .amount-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px;
+      margin-bottom: 7px;
+    }
+    .amount-btn {
+      position: relative;
+      padding: 11px 6px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      background: #FFF;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem; font-weight: 600;
+      color: var(--text); cursor: pointer; text-align: center;
+      transition: all 0.18s;
+    }
+    .amount-btn:hover { border-color: var(--primary); color: var(--primary); }
+    .amount-btn.active { background: var(--primary); border-color: var(--primary); color: #FFF; }
+    .amount-btn .pop-tag {
+      position: absolute; top: -8px; left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent); color: #FFF;
+      font-size: 0.57rem; font-weight: 800;
+      padding: 2px 7px; border-radius: 100px;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .form-input {
+      width: 100%; padding: 11px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem; color: var(--text);
+      transition: border-color 0.2s;
+    }
+    .form-input:focus { outline: none; border-color: var(--primary); }
+    .form-input::placeholder { color: #AAA; }
+
+    .freq-tabs {
+      display: flex;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .freq-tab {
+      flex: 1; padding: 10px 6px;
+      border: none; background: #FFF;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.82rem; font-weight: 500;
+      cursor: pointer; transition: all 0.18s;
+      color: var(--text-2);
+    }
+    .freq-tab.active {
+      background: var(--primary); color: #FFF; font-weight: 600;
+    }
+
+    .donate-btn {
+      width: 100%; padding: 15px;
+      background: var(--primary); color: #FFF;
+      border: none; border-radius: var(--radius);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.97rem; font-weight: 700;
+      cursor: pointer; letter-spacing: 0.02em;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      transition: all 0.2s;
+      margin-top: 4px;
+    }
+    .donate-btn:hover {
+      background: var(--accent);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(193,123,42,0.28);
+    }
+
+    .form-meta {
+      display: flex; align-items: center; justify-content: center;
+      gap: 18px; margin-top: 11px;
+      font-size: 0.73rem; color: var(--text-2);
+    }
+    .form-meta span { display: flex; align-items: center; gap: 4px; }
+
+    /* ─── IMPACT HINT ─── */
+    .impact-hint {
+      display: flex; align-items: center; gap: 6px;
+      margin-top: 8px; padding: 8px 12px;
+      background: #EAF4EE; border-radius: var(--radius);
+      font-size: 0.78rem; color: #1A6B5A; font-weight: 500;
+      transition: opacity 0.2s;
+    }
+    .impact-hint svg { flex-shrink: 0; color: #1A6B5A; }
+
+    /* ─── DONOR DETAILS PANEL (2-step form) ─── */
+    .donor-details-panel {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.4s ease, opacity 0.3s ease;
+      opacity: 0;
+    }
+    .donor-details-panel.open {
+      max-height: 600px; opacity: 1;
+    }
+    .donor-details-divider {
+      display: flex; align-items: center; gap: 12px;
+      margin: 16px 0 18px;
+    }
+    .donor-details-divider::before,
+    .donor-details-divider::after {
+      content: ''; flex: 1; height: 1px; background: var(--border);
+    }
+    .donor-details-divider span {
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--text-2); white-space: nowrap;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    @media (max-width: 480px) { .form-row { grid-template-columns: 1fr; } }
+    .req { color: var(--accent); }
+
+    /* ─── RECENT DONORS TICKER ─── */
+    .recent-donors {
+      margin-top: 14px; padding: 10px 14px;
+      background: var(--bg-alt); border-radius: var(--radius);
+      border: 1px solid var(--border);
+      font-size: 0.75rem; color: var(--text-2);
+      overflow: hidden; min-height: 36px;
+    }
+    .donor-tick {
+      display: flex; align-items: center; gap: 8px;
+      animation: fadeSlide 0.4s ease;
+    }
+    .donor-tick .donor-avatar-sm {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--accent-light); color: var(--accent);
+      font-size: 0.62rem; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .donor-tick strong { color: var(--primary); }
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─── URGENCY STRIP ─── */
+    .urgency-strip {
+      background: linear-gradient(90deg, #FFF3CD 0%, #FFF8E7 100%);
+      border: 1px solid #F0C040;
+      border-radius: var(--radius); padding: 9px 14px;
+      display: flex; align-items: center; gap: 9px;
+      margin-bottom: 18px; font-size: 0.78rem;
+      color: #92610A; font-weight: 500;
+    }
+    .urgency-strip svg { flex-shrink: 0; }
+
+    /* ─── SPECIAL OCCASION BANNER ─── */
+    .occasion-banner {
+      background: linear-gradient(135deg, var(--primary) 0%, #2A3F6B 100%);
+      border-radius: var(--radius-lg); padding: 32px;
+      display: grid; grid-template-columns: 1fr auto;
+      gap: 24px; align-items: center;
+      margin-top: 56px;
+    }
+    .occasion-banner h3 { color: #FFF; font-size: 1.3rem; margin-bottom: 8px; }
+    .occasion-banner p  { color: rgba(255,255,255,0.72); font-size: 0.88rem; line-height: 1.6; }
+    .occasion-emojis { font-size: 2.4rem; letter-spacing: 6px; line-height: 1; }
+    @media (max-width: 600px) {
+      .occasion-banner { grid-template-columns: 1fr; }
+      .occasion-emojis { font-size: 1.8rem; }
+    }
+
+    /* ─── FAQ ACCORDION ─── */
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 18px 0; cursor: pointer;
+      font-size: 0.96rem; font-weight: 600; color: var(--primary);
+      gap: 16px; user-select: none;
+    }
+    .faq-q:hover { color: var(--accent); }
+    .faq-icon {
+      width: 24px; height: 24px; border-radius: 50%;
+      background: var(--bg-alt); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-size: 0.8rem; color: var(--primary);
+      transition: all 0.2s; font-weight: 700;
+    }
+    .faq-item.open .faq-icon { background: var(--primary); color: #FFF; transform: rotate(45deg); }
+    .faq-a {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.2s;
+      font-size: 0.88rem; color: var(--text-2); line-height: 1.75;
+    }
+    .faq-item.open .faq-a { max-height: 200px; padding-bottom: 18px; }
+
+    /* ─── STATS BAND ─── */
+    .stats-band { background: var(--primary); padding: 0; }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width: 700px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .stat-cell {
+      padding: 36px 24px; text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .stat-cell:last-child { border-right: none; }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem; font-weight: 700;
+      color: #FFF; line-height: 1; display: block;
+    }
+    .stat-num sup { font-size: 1.4rem; color: var(--gold); }
+    .stat-num .plus { color: var(--gold); }
+    .stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.65); margin-top: 6px; }
+
+    /* ─── LIVE CAMPAIGN ─── */
+    .live-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: #16A34A; margin-bottom: 6px;
+    }
+    .live-dot {
+      width: 8px; height: 8px; background: #22C55E;
+      border-radius: 50%;
+      animation: pulse-dot 2s infinite;
+    }
+    @keyframes pulse-dot {
+      0%,100% { opacity:1; transform:scale(1); }
+      50% { opacity:.5; transform:scale(1.4); }
+    }
+
+    .campaign-card {
+      background: #FFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .campaign-body { padding: 28px; }
+    .camp-tag {
+      display: inline-block;
+      background: #FFF3E0; color: var(--accent);
+      padding: 4px 11px; border-radius: 100px;
+      font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .camp-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem; color: var(--primary);
+      margin-bottom: 9px;
+    }
+    .camp-desc { font-size: 0.88rem; margin-bottom: 20px; }
+
+    .progress-meta {
+      display: flex; justify-content: space-between;
+      font-size: 0.83rem; margin-bottom: 7px;
+    }
+    .progress-raised { font-weight: 700; color: var(--primary); }
+    .progress-goal  { color: var(--text-2); }
+    .progress-bar   { height: 8px; background: #EDE9E2; border-radius: 100px; overflow: hidden; }
+    .progress-fill  {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent) 0%, #E89010 100%);
+      border-radius: 100px;
+      width: 0;
+      transition: width 1.2s ease;
+    }
+    .progress-info {
+      display: flex; justify-content: space-between;
+      font-size: 0.73rem; color: var(--text-2);
+      margin-top: 5px;
+    }
+
+    /* ─── CATEGORY TABS ─── */
+    .cat-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 32px; }
+    .cat-tab {
+      padding: 7px 18px;
+      border: 1.5px solid var(--border);
+      border-radius: 100px;
+      font-size: 0.82rem; font-weight: 500;
+      cursor: pointer; background: #FFF;
+      color: var(--text-2); transition: all 0.18s;
+    }
+    .cat-tab.active { background: var(--primary); border-color: var(--primary); color: #FFF; }
+    .cat-tab:hover:not(.active) { border-color: var(--primary); color: var(--primary); }
+
+    /* ─── CATEGORY CARDS ─── */
+    .cat-card {
+      background: #FFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      transition: all 0.2s;
+    }
+    .cat-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-3px);
+      border-color: #D0C4B4;
+    }
+
+    .cat-icon {
+      width: 42px; height: 42px;
+      background: var(--accent-light);
+      border-radius: var(--radius);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px;
+      color: var(--accent);
+    }
+    .cat-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.03rem; color: var(--primary);
+      margin-bottom: 7px; font-weight: 600;
+    }
+    .cat-desc { font-size: 0.83rem; line-height: 1.6; margin-bottom: 16px; }
+    .cat-link {
+      font-size: 0.82rem; font-weight: 600;
+      color: var(--primary); text-decoration: none;
+      display: inline-flex; align-items: center; gap: 5px;
+      transition: color 0.18s;
+    }
+    .cat-link:hover { color: var(--accent); }
+
+    /* ─── WHY SECTION ─── */
+    .feature-row {
+      display: flex; gap: 18px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .feature-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .feature-icon {
+      width: 46px; height: 46px; flex-shrink: 0;
+      background: var(--accent-light);
+      border-radius: var(--radius);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--accent);
+    }
+    .feature-content h3 {
+      font-size: 0.97rem; color: var(--primary);
+      margin-bottom: 5px;
+    }
+    .feature-content p { font-size: 0.84rem; }
+
+    .what-card {
+      background: #FFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+    .check-row {
+      display: flex; align-items: flex-start; gap: 11px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.88rem; color: var(--text);
+    }
+    .check-row:last-child { border-bottom: none; }
+    .check-icon {
+      width: 20px; height: 20px; flex-shrink: 0;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: #FFF; font-size: 10px; font-weight: 800;
+      margin-top: 1px;
+    }
+
+    /* ─── HOW IT WORKS ─── */
+    .step-card { text-align: center; padding: 32px 24px; }
+    .step-num {
+      width: 46px; height: 46px;
+      background: var(--primary);
+      border-radius: 50%;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem; font-weight: 700;
+      color: #FFF;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 18px;
+    }
+    .step-title { font-size: 1.05rem; color: var(--primary); margin-bottom: 9px; }
+    .step-desc  { font-size: 0.84rem; }
+
+    /* ─── SLAB CARDS ─── */
+    .slab-card {
+      background: #FFF;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 26px 20px;
+      text-align: center;
+      position: relative;
+      transition: all 0.2s;
+    }
+    .slab-card:hover { border-color: var(--primary); }
+    .slab-card.featured { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+    .slab-badge {
+      position: absolute; top: -11px; left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent); color: #FFF;
+      font-size: 0.65rem; font-weight: 800;
+      padding: 3px 12px; border-radius: 100px;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .slab-amt {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem; font-weight: 700;
+      color: var(--primary); margin: 6px 0 3px;
+    }
+    .slab-name {
+      font-size: 0.72rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--accent); margin-bottom: 10px;
+    }
+    .slab-desc { font-size: 0.82rem; margin-bottom: 18px; }
+
+    /* ─── VEDIC SECTION ─── */
+    .vedic-section { background: var(--primary); padding: 88px 0; }
+    .mantra-block { text-align: center; margin-bottom: 56px; }
+    .mantra-text {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      color: var(--gold); margin-bottom: 10px;
+      letter-spacing: 0.08em;
+    }
+    .mantra-desc { color: rgba(255,255,255,0.75); font-size: 0.97rem; }
+    .vedic-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    @media (max-width: 720px) { .vedic-grid { grid-template-columns: 1fr; } }
+    .vedic-item {
+      padding: 32px 24px; text-align: center;
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: var(--radius-lg);
+    }
+    .vedic-sym {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem; color: var(--gold);
+      margin-bottom: 14px;
+    }
+    .vedic-item h3 { color: #FFF; font-size: 1.05rem; margin-bottom: 10px; }
+    .vedic-item p  { color: rgba(255,255,255,0.68); font-size: 0.86rem; }
+
+    /* ─── TRUST SECTION ─── */
+    .trust-card {
+      background: #FFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    .trust-card h3 { font-size: 0.97rem; margin-bottom: 7px; }
+    .trust-card p  { font-size: 0.82rem; }
+
+    /* ─── TESTIMONIALS ─── */
+    .testi-card {
+      background: #FFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+    .testi-q {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem; color: var(--accent);
+      line-height: 1; margin-bottom: 14px;
+    }
+    .testi-text {
+      font-size: 0.92rem; color: var(--text);
+      line-height: 1.75; font-style: italic;
+      margin-bottom: 22px;
+    }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-avatar {
+      width: 46px; height: 46px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 0.88rem;
+      flex-shrink: 0;
+      border: 2.5px solid transparent;
+    }
+    .testi-avatar.av-1 { background: #FFF0E0; color: #C17B2A; border-color: #E8C080; }
+    .testi-avatar.av-2 { background: #E8F4EF; color: #1A6B5A; border-color: #80C8A8; }
+    .testi-avatar.av-3 { background: #EEF0F8; color: #1C2B4A; border-color: #8090C0; }
+    .testi-name  { font-weight: 600; font-size: 0.88rem; color: var(--primary); }
+    .testi-role  { font-size: 0.75rem; color: var(--text-2); }
+    .testi-stars { color: #F5A623; font-size: 0.82rem; letter-spacing: 1px; margin-bottom: 14px; }
+
+    /* ─── CTA BANNER ─── */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--accent-light) 0%, #FFF8EC 100%);
+      border-top: 1px solid #E8C980;
+      padding: 88px 0;
+      text-align: center;
+    }
+    .cta-banner h2 { font-size: clamp(1.8rem, 3vw, 2.7rem); margin-bottom: 14px; }
+    .cta-banner p  { font-size: 1.06rem; max-width: 540px; margin: 0 auto 28px; }
+    .cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* ─── FOOTER ─── */
+    .footer { background: var(--primary); padding: 64px 0 28px; }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1fr;
+      gap: 48px; margin-bottom: 48px;
+    }
+    @media (max-width: 900px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    }
+    @media (max-width: 560px) {
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem; font-weight: 700;
+      color: #FFF; margin-bottom: 11px;
+    }
+    .footer-desc {
+      font-size: 0.84rem;
+      color: rgba(255,255,255,0.62);
+      line-height: 1.7; margin-bottom: 22px;
+    }
+    .footer-badges { display: flex; gap: 10px; flex-wrap: wrap; }
+    .foot-badge {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.14);
+      padding: 5px 12px; border-radius: var(--radius);
+      font-size: 0.72rem; font-weight: 600;
+      color: rgba(255,255,255,0.8);
+    }
+    .footer-col-head {
+      font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: rgba(255,255,255,0.45); margin-bottom: 16px;
+    }
+    /* alias for footer-heading used in HTML */
+    .footer-heading {
+      font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: rgba(255,255,255,0.45); margin-bottom: 16px;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a {
+      text-decoration: none;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.72);
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 22px;
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.77rem; color: rgba(255,255,255,0.42);
+      flex-wrap: wrap; gap: 10px;
+    }
+
+    /* ─── MISC ─── */
+    .section-subtitle { font-size: 1.06rem; max-width: 600px; }
+    .text-center .section-subtitle { margin: 0 auto; }
+
+    .accent-italic {
+      font-style: italic; color: var(--accent);
+      font-size: 1rem; margin-top: 14px;
+    }
+
+    /* ─── IMAGES ─── */
+    .nav-logo { text-decoration: none; display: flex; align-items: center; }
+    .nav-logo-img {
+      height: 44px; width: auto;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    .nav-logo-text { display: none; }
+    .nav-logo-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.18rem; font-weight: 700;
+      color: var(--primary); line-height: 1.1;
+    }
+    .nav-logo-tag {
+      font-size: 0.62rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .hero-photos {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 10px;
+      margin-top: 32px; border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .hero-photo { height: 108px; overflow: hidden; }
+    .hero-photo img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform 0.35s;
+    }
+    .hero-photo:hover img { transform: scale(1.06); }
+    .hero-photo:first-child { border-radius: var(--radius-lg) 0 0 var(--radius-lg); }
+    .hero-photo:last-child  { border-radius: 0 var(--radius-lg) var(--radius-lg) 0; }
+
+    .campaign-img-wrap { overflow: hidden; border-radius: var(--radius-lg) var(--radius-lg) 0 0; height: 220px; }
+    .campaign-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .cat-card { overflow: hidden; }
+    .cat-card-img {
+      width: calc(100% + 48px);
+      margin: -24px -24px 20px -24px;
+      height: 155px;
+      object-fit: cover;
+      display: block;
+      background: var(--accent-light);        /* fallback if image missing */
+      background-image: linear-gradient(135deg, #F7EDDC 0%, #F0D9A8 100%);
+    }
+    .cat-card-img[src=""], .cat-card-img:not([src]) {
+      min-height: 155px;
+    }
+
+    .seva-gallery {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 4px;
+      border-radius: var(--radius-lg); overflow: hidden;
+      margin-bottom: 56px;
+    }
+    .seva-gallery-item { position: relative; height: 260px; overflow: hidden; }
+    .seva-gallery-item img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform 0.4s; filter: brightness(0.88);
+    }
+    .seva-gallery-item:hover img { transform: scale(1.05); filter: brightness(1); }
+    .seva-gallery-caption {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(28,43,74,0.82));
+      color: #FFF; padding: 28px 16px 14px;
+      font-size: 0.82rem; font-weight: 500;
+    }
+    @media (max-width: 700px) {
+      .seva-gallery { grid-template-columns: 1fr; }
+      .hero-photos { gap: 6px; }
+    }
+
+    .footer-logo-img {
+      height: 46px; width: auto;
+      object-fit: contain;
+      opacity: 0.92;
+      margin-bottom: 12px; display: block;
+    }
+
+    /* ─── SLAB GRID RESPONSIVE ─── */
+    .slab-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    @media (max-width: 760px) {
+      .slab-grid { grid-template-columns: repeat(2,1fr); }
+      .slab-grid .slab-card:last-child { grid-column: 1 / -1; max-width: 320px; margin: 0 auto; }
+    }
+    @media (max-width: 480px) {
+      .slab-grid { grid-template-columns: 1fr; }
+      .slab-grid .slab-card:last-child { grid-column: 1; max-width: 100%; }
+    }
+
+    /* ─── BACK TO TOP ─── */
+    .back-to-top {
+      position: fixed; bottom: 90px; right: 28px; z-index: 299;
+      width: 38px; height: 38px; border-radius: 50%;
+      background: var(--primary); color: #fff;
+      border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: var(--shadow);
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.3s, transform 0.2s;
+      font-size: 1rem;
+    }
+    .back-to-top.visible { opacity: 1; pointer-events: auto; }
+    .back-to-top:hover { transform: translateY(-2px); background: var(--accent); }
+  
+/* ─── HERO CAROUSEL ─── */
+.carousel-wrap{position:relative;overflow:hidden;border-radius:var(--radius-lg);margin-top:32px}
+.carousel-track{display:flex;transition:transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);will-change:transform}
+.carousel-slide{min-width:100%;position:relative;height:420px;overflow:hidden;flex-shrink:0}
+.carousel-slide img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.6s ease}
+.carousel-slide:hover img{transform:scale(1.03)}
+.carousel-caption{position:absolute;bottom:0;left:0;right:0;padding:28px 24px 20px;background:linear-gradient(to top,rgba(28,43,74,0.88) 0%,transparent 100%);color:#fff}
+.carousel-caption h3{font-family:'Playfair Display',serif;font-size:1.15rem;margin-bottom:4px;font-weight:500}
+.carousel-caption p{font-size:0.8rem;opacity:0.8;line-height:1.5}
+.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.9);border:none;border-radius:50%;width:42px;height:42px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.1rem;color:var(--primary);transition:all 0.2s;z-index:5;box-shadow:0 2px 8px rgba(0,0,0,0.15)}
+.carousel-btn:hover{background:#fff;transform:translateY(-50%) scale(1.08)}
+.carousel-prev{left:14px}
+.carousel-next{right:14px}
+.carousel-dots{display:flex;justify-content:center;gap:7px;margin-top:14px}
+.carousel-dot{width:8px;height:8px;border-radius:50%;background:var(--border);cursor:pointer;transition:all 0.2s;border:none;padding:0}
+.carousel-dot.active{background:var(--accent);width:22px;border-radius:4px}
+
+/* ─── SEVA GALLERY CAROUSEL ─── */
+.seva-carousel-wrap{position:relative;overflow:hidden;border-radius:var(--radius-lg);margin-bottom:56px}
+.seva-carousel-track{display:flex;transition:transform 0.5s ease}
+.seva-carousel-slide{min-width:33.333%;padding:2px;flex-shrink:0}
+.seva-carousel-slide img{width:100%;height:260px;object-fit:cover;border-radius:var(--radius);display:block;filter:brightness(0.88);transition:filter 0.3s}
+.seva-carousel-slide:hover img{filter:brightness(1)}
+@media(max-width:760px){
+  .seva-carousel-slide{min-width:100%}
+  .carousel-slide{height:260px}
+}
+
+/* ─── CATEGORY SCROLL TABS ─── */
+.cat-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:4px}
+.cat-scroll::-webkit-scrollbar{display:none}
+.cat-tabs-inner{display:flex;gap:8px;min-width:max-content}
+
+/* ─── TESTIMONIAL CAROUSEL ─── */
+.test-track{display:flex;transition:transform 0.5s ease;gap:0}
+.test-slide{min-width:100%;padding:0 2px}
+
+/* ─── IMPACT NUMBER COUNTER ─── */
+.impact-num{display:inline-block}
+
+/* ─── PARALLAX HERO ─── */
+.hero-badge-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:var(--accent-light);color:var(--accent);padding:5px 13px;border-radius:100px;font-size:0.75rem;font-weight:600;letter-spacing:0.04em}
+
+/* ════════════════════════════════════════════════════════════
+   COMPREHENSIVE MOBILE FIX — appended last so it wins on cascade
+   ════════════════════════════════════════════════════════════ */
+html, body { overflow-x: hidden; max-width: 100%; }
+img { max-width: 100%; }
+
+@media (max-width: 760px) {
+  .container { padding: 0 16px; }
+  .section { padding: 56px 0; }
+
+  /* HERO */
+  .hero { padding: 24px 0 40px; }
+  .hero-title { font-size: 1.7rem !important; line-height: 1.25 !important; }
+  .hero-desc { font-size: 0.95rem; max-width: 100%; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { width: 100%; justify-content: center; text-align: center; }
+  .hero-badge-row { gap: 6px; }
+  .hero-badge { font-size: 0.68rem; padding: 4px 10px; }
+  .trust-bar { gap: 10px 16px; }
+  .trust-item { font-size: 0.76rem; }
+
+  /* HERO CAROUSEL */
+  .carousel-wrap { margin-top: 20px; border-radius: 12px; }
+  .carousel-slide { height: 230px !important; }
+  .carousel-btn { width: 32px; height: 32px; font-size: 0.85rem; }
+  .carousel-prev { left: 8px; }
+  .carousel-next { right: 8px; }
+  .carousel-caption { padding: 16px 12px 10px; }
+  .carousel-caption h3 { font-size: 0.92rem; }
+  .carousel-caption p { font-size: 0.7rem; }
+
+  /* SEVA CAROUSEL */
+  .seva-carousel-wrap { margin-bottom: 32px; border-radius: 12px; }
+  .seva-carousel-slide { min-width: 100% !important; }
+  .seva-carousel-slide img { height: 200px; }
+
+  /* DONATE CARD */
+  .donate-card { padding: 20px; position: static !important; top: auto !important; }
+  .donate-card-title { font-size: 1.15rem; }
+  .amount-grid { gap: 6px; }
+  .amount-btn { padding: 10px 4px; font-size: 0.8rem; }
+  .freq-tabs { font-size: 0.78rem; }
+  .form-meta { flex-wrap: wrap; gap: 8px 14px; justify-content: center; }
+
+  /* STATS BAND */
+  .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .stat-cell { padding: 22px 10px; border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .stat-cell:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.1) !important; }
+  .stat-num { font-size: 1.9rem !important; }
+
+  /* GRIDS — force single column on phones regardless of breakpoint above */
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr !important; gap: 16px; }
+
+  /* CATEGORY FILTER TABS */
+  .cat-tabs-inner { gap: 6px; }
+  .cat-tab { padding: 6px 14px; font-size: 0.78rem; }
+
+  /* CAT CARDS */
+  .cat-card { padding: 18px; }
+  .cat-card-img { height: 130px; margin: -18px -18px 16px -18px; width: calc(100% + 36px); }
+
+  /* OCCASION BANNER */
+  .occasion-banner { padding: 22px; text-align: center; grid-template-columns: 1fr !important; }
+  .occasion-banner h3 { font-size: 1.1rem; }
+  .occasion-banner .btn { white-space: normal !important; width: 100%; text-align: center; line-height: 1.3; padding: 14px 16px; }
+  .occasion-emojis { font-size: 1.6rem !important; letter-spacing: 4px !important; margin-top: 4px; }
+
+  /* SLAB GRID */
+  .slab-grid { grid-template-columns: 1fr !important; }
+  .slab-grid .slab-card:last-child { grid-column: 1 !important; max-width: 100% !important; }
+
+  /* FAQ */
+  .faq-q { font-size: 0.9rem; padding: 14px 0; }
+
+  /* NAV */
+  .nav-logo-name { font-size: 1rem; }
+  .nav-inner { height: 58px; }
+
+  /* WHATSAPP / BACK TO TOP — don't overlap on small screens */
+  .wa-float { width: 46px; height: 46px; bottom: 20px; right: 16px; }
+  .wa-float svg { width: 24px; height: 24px; }
+  .back-to-top { width: 34px; height: 34px; bottom: 76px; right: 18px; }
+
+  /* SECTION HEADINGS */
+  h2 { font-size: 1.55rem !important; }
+
+  /* FOOTER */
+  .footer-grid { grid-template-columns: 1fr !important; gap: 28px; }
+  .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
+  .btn-lg { padding: 14px 20px; }
+  .btn { white-space: normal; line-height: 1.3; }
+}
+
+@media (max-width: 420px) {
+  .hero-title { font-size: 1.5rem !important; }
+  .stats-grid { grid-template-columns: 1fr !important; }
+  .stat-cell, .stat-cell:nth-child(odd) { border-right: none !important; }
+  .carousel-slide { height: 190px !important; }
+  .seva-carousel-slide img { height: 170px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="top-nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="data:image/png;base64,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" class="nav-logo-img" alt="Antar Yog Foundation" />
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Antar Yog</span>
+          <span class="nav-logo-tag">Foundation — Sacred Giving</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#categories">Daan Opportunities</a></li>
+        <li><a href="#why">Why Give</a></li>
+        <li><a href="#impact">Seva in Action</a></li>
+        <li><a href="#trust">Transparency</a></li>
+      </ul>
+      <a href="#donate-form" class="nav-cta">Offer Daan</a>
+      <button class="nav-burger" id="burger" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+<section class="hero" style="padding-top:80px">
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- LEFT: Copy -->
+      <div class="hero-content">
+        <div class="hero-badge-row">
+          <span class="hero-badge">
+            <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="currentColor" stroke-width="1.4"/><path d="M3.5 6l2 2 3-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            Registered Non-Profit
+          </span>
+          <span class="hero-badge">80G Tax Benefit</span>
+          <span class="hero-badge">100% Transparent</span>
+        </div>
+
+        <h1 class="hero-title" style="font-size:clamp(2rem,4.5vw,3.4rem);line-height:1.1">
+          &ldquo;The world is interested<br>in givers, <span class="accent">not takers.</span>&rdquo;
+        </h1>
+        <p style="font-family:'Playfair Display',serif;font-size:1.05rem;font-style:italic;color:var(--accent);margin-bottom:18px">
+          &mdash; Brahmarishi Acharya Upendra Ji
+        </p>
+        <p class="hero-desc" style="margin-bottom:14px">
+          Your daan is not a transaction. It is a sacred decision to convert your wealth into blessings, impact and a legacy that lives beyond you.
+        </p>
+        <p style="font-size:0.92rem;color:var(--text-2);line-height:1.75;margin-bottom:28px">
+          Through <strong style="color:var(--primary)">Antar Yog Daan</strong>, your contribution can become food for the hungry, education for children, care for the elderly, protection for Dharma and a permanent foundation for Guru karya.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#donate-form" class="btn btn-primary btn-lg">
+            Yes, I Choose To Bring Joy Through My Daan
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2.5 7.5h10M8.5 3.5l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#categories" class="btn btn-outline btn-lg">Explore All Daan Opportunities</a>
+        </div>
+
+        <div class="trust-bar" style="margin-top:28px">
+          <div class="trust-item"><div class="trust-dot">&#10003;</div> 80G Tax Benefit</div>
+          <div class="trust-item"><div class="trust-dot">&#10003;</div> Registered Foundation</div>
+          <div class="trust-item"><div class="trust-dot">&#10003;</div> Secure Payments</div>
+          <div class="trust-item"><div class="trust-dot">&#10003;</div> Full Transparency</div>
+        </div>
+
+        <!-- IMAGE CAROUSEL -->
+        <div class="carousel-wrap">
+          <div class="carousel-track" id="heroCarousel">
+            <div class="carousel-slide">
+              <img src="images/seva-1.png" alt="Sadhu Seva — Serving the pillars of Dharma" loading="lazy">
+              <div class="carousel-caption"><h3>Sadhu &amp; Sanyasi Seva</h3><p>Serving the living pillars of Dharma with food and care</p></div>
+            </div>
+            <div class="carousel-slide">
+              <img src="images/seva-2.png" alt="Festival Sponsorship — Sacred seva at festivals" loading="lazy">
+              <div class="carousel-caption"><h3>Festival Sponsorship</h3><p>Anna Daan during sacred festivals and Shibirs</p></div>
+            </div>
+            <div class="carousel-slide">
+              <img src="images/feed-the-deserving.png" alt="Feed the Deserving — Anna Daan in action" loading="lazy">
+              <div class="carousel-caption"><h3>Anna Daan Mahadaan</h3><p>Every rupee becomes nourishment for a deserving soul</p></div>
+            </div>
+            <div class="carousel-slide">
+              <img src="images/sacred-occasions.png" alt="Sacred Occasions — Satvik Bhojan Seva" loading="lazy">
+              <div class="carousel-caption"><h3>Sacred Occasions Daan</h3><p>Saat​vik Bhojan Seva during auspicious events</p></div>
+            </div>
+            <div class="carousel-slide">
+              <img src="images/sadhu-seva-real.jpg" alt="Real Sadhu Seva by Antar Yog Foundation" loading="lazy">
+              <div class="carousel-caption"><h3>Real Seva. Real Impact.</h3><p>Antar Yog Foundation — serving Sadhus across Bharat</p></div>
+            </div>
+            <div class="carousel-slide">
+              <img src="images/festival-sponsorship.png" alt="Festival Bhandara — Seva during celebrations" loading="lazy">
+              <div class="carousel-caption"><h3>Bhandara Seva</h3><p>Sacred giving during Navratri, Shivratri and festivals</p></div>
+            </div>
+          </div>
+          <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1)" aria-label="Previous">&#8592;</button>
+          <button class="carousel-btn carousel-next" onclick="moveCarousel(1)" aria-label="Next">&#8594;</button>
+        </div>
+        <div class="carousel-dots" id="heroDots"></div>
+      </div>
+
+      <!-- RIGHT: Donate Form -->
+      <div id="donate-form">
+        <div class="donate-card">
+          <p class="donate-card-title">Offer Your Daan</p>
+          <p class="donate-card-sub">Choose your sankalp and make your contribution</p>
+
+          <div class="urgency-strip">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.4"/><path d="M7 4v3.5l2 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            <span><strong>23 donors</strong> have contributed this week &mdash; join them</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Daan Category</label>
+            <select class="form-select" id="daan-category" onchange="updateImpact()">
+              <option value="">Select a Seva Category</option>
+              <option value="anna">Anna Daan &mdash; Feed Lives, Offer Seva</option>
+              <option value="occasion">Special Occasion Daan</option>
+              <option value="sadhu">Sadhu and Sanyasi Seva</option>
+              <option value="brahman">Brahman Seva &mdash; Ved Rakshak</option>
+              <option value="bal">Bal Seva &mdash; Child Welfare</option>
+              <option value="orphan">Orphan Seva</option>
+              <option value="divyang">Divyang Seva</option>
+              <option value="suvasini">Suvasini Seva</option>
+              <option value="karuna">Karuna Seva &mdash; Needy Families</option>
+              <option value="elder">Elder Care Seva</option>
+              <option value="aarogya">Aarogya Seva &mdash; Healthcare</option>
+              <option value="guru">Guru Kripa Daan</option>
+              <option value="gau">Gau Seva &mdash; Cow Protection</option>
+              <option value="books">Gyan Daan &mdash; Spiritual Books</option>
+              <option value="bhoomi">Bhoomi Daan &mdash; Ashram Land</option>
+              <option value="gurukul">Gurukul Daan</option>
+              <option value="seva">Guru Seva (Volunteer)</option>
+            </select>
+          </div>
+
+          <div id="impact-hint" class="impact-hint" style="display:none;margin-bottom:12px">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="flex-shrink:0"><path d="M7 1l1.5 4H13L9.5 7.5 11 12 7 9 3 12l1.5-4.5L1 5h4.5L7 1z" fill="currentColor"/></svg>
+            <span id="impact-text"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Select Amount</label>
+            <div class="amount-grid">
+              <button class="amount-btn" onclick="setAmt(this,700)">&#8377;700</button>
+              <button class="amount-btn" onclick="setAmt(this,2100)">&#8377;2,100</button>
+              <button class="amount-btn" onclick="setAmt(this,5100)">
+                <span class="pop-tag">Popular</span>&#8377;5,100
+              </button>
+              <button class="amount-btn" onclick="setAmt(this,11000)">&#8377;11,000</button>
+              <button class="amount-btn" onclick="setAmt(this,21000)">&#8377;21,000</button>
+              <button class="amount-btn" onclick="setAmt(this,51000)">&#8377;51,000</button>
+            </div>
+            <input type="number" class="form-input" id="custom-amt" placeholder="Or enter custom amount (&#8377;)" style="margin-top:8px" oninput="clearAmtBtns()">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Frequency</label>
+            <div class="freq-tabs">
+              <button class="freq-tab active" onclick="setFreq(this)">One-Time</button>
+              <button class="freq-tab" onclick="setFreq(this)">Monthly</button>
+              <button class="freq-tab" onclick="setFreq(this)">Annual</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Dedication <span style="font-weight:400;text-transform:none;letter-spacing:0;font-size:.75rem;color:var(--text-2)">(Optional)</span></label>
+            <input type="text" class="form-input" placeholder="In memory of / in name of&hellip;">
+          </div>
+
+          <button class="donate-btn" onclick="handleDonate()">
+            Yes, I Want To Offer My Daan Now
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2.5 7.5h10M8.5 3.5l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </button>
+          <div class="form-meta">
+            <span>&#128274; Secure Payment</span>
+            <span>&#10003; 80G Tax Benefit</span>
+            <span>&#10003; 100% Transparent</span>
+          </div>
+          <div class="recent-donors" id="recent-donors-widget"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ STATS BAND ═══════════════════════════════ -->
+<div class="stats-band">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-cell"><span class="stat-num" data-count="80">80<sup>G</sup></span><div class="stat-label">Tax Benefit Available</div></div>
+      <div class="stat-cell"><span class="stat-num">17<span class="plus">+</span></span><div class="stat-label">Seva Categories</div></div>
+      <div class="stat-cell"><span class="stat-num">100<span class="plus">%</span></span><div class="stat-label">Transparent Usage</div></div>
+      <div class="stat-cell"><span class="stat-num">&#128274;</span><div class="stat-label">Secure Payments</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEVA IN ACTION — CAROUSEL ═══════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <span class="section-label">Seva In Action</span>
+    <h2 style="font-size:2rem;color:var(--primary);margin-bottom:4px">Real Seva. Real Lives. Real Impact.</h2>
+    <div class="divider"></div>
+    <p style="color:var(--text-2);max-width:620px;margin-bottom:32px;font-size:0.95rem;line-height:1.75">Every rupee you offer becomes part of a larger stream of seva. It reaches those who truly need support, uplifts lives with dignity and brings the giver closer to the sacred joy of contribution.</p>
+
+    <!-- SEVA PHOTO CAROUSEL -->
+    <div class="seva-carousel-wrap">
+      <div class="seva-carousel-track" id="sevaCarousel">
+        <div class="seva-carousel-slide"><img src="images/seva-1.png" alt="Sadhu Seva in action"><div class="seva-gallery-caption">Sadhu &amp; Sanyasi Seva</div></div>
+        <div class="seva-carousel-slide"><img src="images/seva-2.png" alt="Festival Bhandara Seva"><div class="seva-gallery-caption">Festival Bhandara</div></div>
+        <div class="seva-carousel-slide"><img src="images/feed-the-deserving.png" alt="Feed the Deserving"><div class="seva-gallery-caption">Anna Daan</div></div>
+        <div class="seva-carousel-slide"><img src="images/sacred-occasions.png" alt="Sacred Occasions Bhojan"><div class="seva-gallery-caption">Sacred Occasions Bhojan Seva</div></div>
+        <div class="seva-carousel-slide"><img src="images/sadhu-seva-real.jpg" alt="Real Sadhu Seva"><div class="seva-gallery-caption">Antar Yog — Real Seva</div></div>
+        <div class="seva-carousel-slide"><img src="images/seva-packing.jpg" alt="Seva preparation volunteers"><div class="seva-gallery-caption">Volunteer Seva Preparation</div></div>
+        <div class="seva-carousel-slide"><img src="images/banana-seva.jpg" alt="Fruit distribution seva"><div class="seva-gallery-caption">Fruit Distribution Seva</div></div>
+        <div class="seva-carousel-slide"><img src="images/vedic-learning.png" alt="Vedic learning seva"><div class="seva-gallery-caption">Vedic Learning &amp; Gurukul</div></div>
+      </div>
+      <button class="carousel-btn carousel-prev" onclick="moveSevaCarousel(-1)" aria-label="Previous" style="top:50%;transform:translateY(-50%)">&#8592;</button>
+      <button class="carousel-btn carousel-next" onclick="moveSevaCarousel(1)" aria-label="Next" style="top:50%;transform:translateY(-50%)">&#8594;</button>
+    </div>
+    <div class="carousel-dots" id="sevaDots"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ WHY ANTAR YOG DAAN ═══════════════════════════════ -->
+<section class="section section-alt" id="why">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label">Why Antar Yog Daan Is Unique</span>
+      <h2 style="font-size:2rem;color:var(--primary);margin-bottom:4px">A Donation That Is Directed, Rooted And Accountable</h2>
+      <div class="divider" style="margin:14px auto 20px"></div>
+      <p style="color:var(--text-2);max-width:660px;margin:0 auto 36px;font-size:0.95rem;line-height:1.75">Antar Yog Daan is not scattered across vague causes. It is guided by the spiritual principle of <strong style="color:var(--primary)">Supatra Daan</strong> &mdash; giving to the right recipient, for the right purpose and with the right bhav.</p>
+    </div>
+    <div class="grid-3">
+      <div class="feature-row" style="border:none;padding:24px;background:#fff;border-radius:var(--radius-lg);border:1px solid var(--border)"><div class="feature-icon"><span style="font-size:1.5rem">&#127754;</span></div><div class="feature-content"><h3>Amplified</h3><p>Your contribution becomes part of a collective effort that can serve many lives together.</p></div></div>
+      <div class="feature-row" style="border:none;padding:24px;background:#fff;border-radius:var(--radius-lg);border:1px solid var(--border)"><div class="feature-icon"><span style="font-size:1.5rem">&#129486;</span></div><div class="feature-content"><h3>Rooted In Sanatan Dharma</h3><p>Giving is offered with seva bhav, humility and the sacred intention of upliftment.</p></div></div>
+      <div class="feature-row" style="border:none;padding:24px;background:#fff;border-radius:var(--radius-lg);border:1px solid var(--border)"><div class="feature-icon"><span style="font-size:1.5rem">&#127919;</span></div><div class="feature-content"><h3>Directed Towards The Truly Deserving</h3><p>Careful efforts are made to identify those who genuinely need support.</p></div></div>
+      <div class="feature-row" style="border:none;padding:24px;background:#fff;border-radius:var(--radius-lg);border:1px solid var(--border)"><div class="feature-icon"><span style="font-size:1.5rem">&#10024;</span></div><div class="feature-content"><h3>Spiritually Powerful</h3><p>Daan offered with the right bhav creates punya, blessings, peace and prosperity.</p></div></div>
+      <div class="feature-row" style="border:none;padding:24px;background:#fff;border-radius:var(--radius-lg);border:1px solid var(--border)"><div class="feature-icon"><span style="font-size:1.5rem">&#129309;</span></div><div class="feature-content"><h3>Handled With Responsibility</h3><p>Contributions are directed towards specific seva initiatives with accountability and care.</p></div></div>
+      <div style="background:var(--primary);border-radius:var(--radius-lg);padding:24px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:14px">
+        <p style="font-family:'Playfair Display',serif;font-size:1.25rem;color:#fff;line-height:1.4">Every rupee you offer becomes part of a larger stream of seva.</p>
+        <a href="#donate-form" class="btn btn-accent">Yes, I Want My Daan To Create Real Impact</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ DAAN CATEGORIES ═══════════════════════════════ -->
+<section class="section" id="categories">
+  <div class="container">
+    <span class="section-label">Daan Opportunities</span>
+    <h2 style="font-size:2rem;color:var(--primary);margin-bottom:4px">Most Donors Begin Here</h2>
+    <div class="divider"></div>
+
+    <!-- Scrollable filter tabs -->
+    <div class="cat-scroll" style="margin-bottom:28px">
+      <div class="cat-tabs-inner">
+        <button class="cat-tab active" onclick="filterCats(this,'all')">All</button>
+        <button class="cat-tab" onclick="filterCats(this,'seva')">Seva &amp; Food</button>
+        <button class="cat-tab" onclick="filterCats(this,'children')">Children</button>
+        <button class="cat-tab" onclick="filterCats(this,'dharma')">Dharma</button>
+        <button class="cat-tab" onclick="filterCats(this,'guru')">Guru Karya</button>
+        <button class="cat-tab" onclick="filterCats(this,'infra')">Infrastructure</button>
+      </div>
+    </div>
+
+    <!-- Featured 2 -->
+    <div class="grid-2" style="margin-bottom:24px">
+      <div class="cat-card" data-cat="seva">
+        <img class="cat-card-img" src="images/anna-daan.jpg" alt="Anna Daan">
+        <div class="cat-icon"><span style="font-size:1.4rem">&#127859;</span></div>
+        <div class="cat-title">Anna Daan</div>
+        <p class="cat-desc">Offer A Nourishing Meal To Devotees, Seekers, Volunteers And Those In Need</p>
+        <a href="anna-daan.html" class="cat-link">Yes, I Want To Offer Anna Daan <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a>
+      </div>
+      <div class="cat-card" data-cat="seva">
+        <img class="cat-card-img" src="images/occasion.jpg" alt="Special Occasion Daan">
+        <div class="cat-icon"><span style="font-size:1.4rem">&#127873;</span></div>
+        <div class="cat-title">Special Occasion Daan</div>
+        <p class="cat-desc">Turn Your Celebration Into Food, Care, Education And Hope For Others</p>
+        <a href="special-occasion.html" class="cat-link">Yes, I Want To Share My Celebration Through Seva <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:1rem;margin:28px 0 20px"><div style="flex:1;height:1px;background:var(--border)"></div><span style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--text-2);white-space:nowrap;font-style:italic">Mahadaan Categories</span><div style="flex:1;height:1px;background:var(--border)"></div></div>
+
+    <div class="grid-3" id="cat-grid">
+      <div class="cat-card" data-cat="dharma"><div class="cat-icon"><span style="font-size:1.5rem">&#128328;</span></div><div class="cat-title">Sadhu And Sanyasi Seva</div><p class="cat-desc">Provide Food, Healthcare And Dignity To The Pillars Of Dharma</p><a href="sadhu-seva.html" class="cat-link">Yes, I Want To Support The Living Pillars Of Dharma <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a></div>
+      <div class="cat-card" data-cat="dharma"><div class="cat-icon"><span style="font-size:1.5rem">&#128218;</span></div><div class="cat-title">Brahman Seva — Ved Rakshak</div><p class="cat-desc">Support The Brahmans Who Preserve Sanatan Knowledge, Rituals And Sacred Traditions</p><a href="sadhu-seva.html" class="cat-link">Yes, I Want My Daan To Preserve Sanatan Knowledge <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a></div>
+      <div class="cat-card" data-cat="children"><img class="cat-card-img" src="images/bal-seva.jpg" alt="Bal Seva"><div class="cat-icon"><span style="font-size:1.5rem">&#128102;</span></div><div class="cat-title">Bal Seva</div><p class="cat-desc">Give A Child Food, Education, Healthcare And The Courage To Dream Again</p><a href="bal-seva.html" class="cat-link">Yes, I Want To Make A Child's Future Better <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a></div>
+      <div class="cat-card" data-cat="children"><div class="cat-icon"><span style="font-size:1.5rem">&#129308;</span></div><div class="cat-title">Orphan Seva</div><p class="cat-desc">Give A Child Without Parents The Care, Security And Future Every Child Deserves</p><a href="orphan-seva.html" class="cat-link">Yes, I Want To Support An Orphan Child <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a></div>
+      <div class="cat-card" data-cat="children"><div class="cat-icon"><span style="font-size:1.5rem">&#9855;</span></div><div class="cat-title">Divyang Seva</div><p class="cat-desc">Provide Mobility, Healthcare, Education And Opportunities For A Life Of Independence</p><a href="divyang-seva.html" class="cat-link">Yes, I Want To Support A Divyang Life <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a></div>
+      <div class="cat-card" data-cat="seva"><img class="cat-card-img" src="images/suvasini.jpg" alt="Suvasini Seva"><div class="cat-icon"><span style="font-size:1.5rem">&#127800;</span></div><div class="cat-title">Suvasini Seva</div><p class="cat-desc">Honour The Living Form Of Divine Shakti And Receive Blessings For Family Well-Being</p><a href="suvasini-seva.html" class="cat-link">Yes, I Wish To Honour Divine Shakti <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a></div>
+      <div class="cat-card" data-cat="seva"><img class="cat-card-img" src="images/karuna.jpg" alt="Karuna Seva"><div class="cat-icon"><span style="font-size:1.5rem">&#129309;</span></div><div class="cat-title">Karuna Seva</div><p class="cat-desc">Uplift Deserving Families With Food, Education, Healthcare And Essential Support</p><a href="karuna-seva.html" class="cat-link">Yes, I Want To Serve The Needy <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a></div>
+      <div class="cat-card" data-cat="seva"><img class="cat-card-img" src="images/elder.jpg" alt="Elder Care Seva"><div class="cat-icon"><span style="font-size:1.5rem">&#129490;</span></div><div class="cat-title">Elder Care Seva</div><p class="cat-desc">Give Senior Citizens Food, Healthcare, Warmth And The Dignity They Deserve</p><a href="elder-care.html" class="cat-link">Yes, I Want To Support Elder Care <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a></div>
+      <div class="cat-card" data-cat="seva"><img class="cat-card-img" src="images/medical.jpg" alt="Aarogya Seva"><div class="cat-icon"><span style="font-size:1.5rem">&#128138;</span></div><div class="cat-title">Aarogya Seva</div><p class="cat-desc">Become The Hope Behind Someone's Medicines, Treatment And Journey Towards Healing</p><a href="aarogya-seva.html" class="cat-link">Yes, I Want To Support Healing <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a></div>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:1rem;margin:28px 0 20px"><div style="flex:1;height:1px;background:var(--border)"></div><span style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--text-2);white-space:nowrap;font-style:italic">Guru Karya, Gau Seva &amp; Antar Yog Initiatives</span><div style="flex:1;height:1px;background:var(--border)"></div></div>
+
+    <div class="grid-3">
+      <div class="cat-card" style="border-color:var(--accent);border-width:2px" data-cat="guru"><img class="cat-card-img" src="images/guru.jpg" alt="Guru Daan"><div class="cat-icon" style="background:rgba(193,123,42,0.1)"><span style="font-size:1.5rem">&#129492;</span></div><div class="cat-title">Guru Daan</div><p class="cat-desc">Help Brahmarshi Acharya Upendra Ji's Wisdom, Healing And Sadhana Reach More Lives</p><a href="guru-daan.html" class="cat-link">Support Guru Karya Today <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a></div>
+      <div class="cat-card" data-cat="dharma"><img class="cat-card-img" src="images/gau.jpg" alt="Gau Seva"><div class="cat-icon"><span style="font-size:1.5rem">&#128004;</span></div><div class="cat-title">Gau Seva</div><p class="cat-desc">Provide Gau Mata With Food, Shelter, Medical Care And Loving Protection</p><a href="gau-seva.html" class="cat-link">Yes, I Want To Serve Gau Mata <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a></div>
+      <div class="cat-card" data-cat="dharma"><img class="cat-card-img" src="images/books.jpg" alt="Gyan Daan"><div class="cat-icon"><span style="font-size:1.5rem">&#128366;</span></div><div class="cat-title">Gyan Daan — Books</div><p class="cat-desc">Place Life-Transforming Spiritual Wisdom Into The Hands Of A Sincere Seeker</p><a href="vidya-daan.html" class="cat-link">Yes, I Want To Spread Spiritual Wisdom <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a></div>
+      <div class="cat-card" data-cat="infra"><img class="cat-card-img" src="images/bhoomi.jpg" alt="Bhoomi Daan"><div class="cat-icon"><span style="font-size:1.5rem">&#127963;</span></div><div class="cat-title">Bhoomi Daan</div><p class="cat-desc">Help Build A Sacred Ashram For Sadhana, Healing And Spiritual Transformation</p><a href="bhoomi-daan.html" class="cat-link">Yes, I Want To Build A Sacred Legacy <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a></div>
+      <div class="cat-card" data-cat="infra,guru"><div class="cat-icon"><span style="font-size:1.5rem">&#127891;</span></div><div class="cat-title">Gurukul Daan</div><p class="cat-desc">Help Transform A Rented Gurukul Into A Permanent Home For Guru Karya</p><a href="gurukul-daan.html" class="cat-link">Yes, I Want To Help Secure The Gurukul <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a></div>
+      <div class="cat-card" data-cat="guru"><div class="cat-icon"><span style="font-size:1.5rem">&#9997;</span></div><div class="cat-title">Guru Seva</div><p class="cat-desc">Offer Your Time, Skills And Commitment To A Mission That Transforms Lives</p><a href="guru-seva.html" class="cat-link">Yes, I Want To Offer Seva <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a></div>
+    </div>
+
+    <!-- Special Occasion Banner -->
+    <div class="occasion-banner">
+      <div>
+        <h3>Celebrate By Giving. Give By Celebrating.</h3>
+        <p>Birthdays, anniversaries, festivals, housewarmings and milestones are the most powerful moments to offer daan. Let your joy become someone else's hope.</p>
+        <a href="special-occasion.html" class="btn btn-accent" style="margin-top:18px">Yes, I Want To Share My Celebration Through Seva</a>
+      </div>
+      <div class="occasion-emojis">&#127881; &#127775; &#127812;</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ WHY LEADERS ═══════════════════════════════ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;gap:56px">
+      <div>
+        <span class="section-label">Why Daan Matters For Doers And Leaders</span>
+        <h2 style="font-size:2rem;color:var(--primary);margin-bottom:4px">Great Leaders Do Not Only Create Wealth. They Create Impact.</h2>
+        <div class="divider"></div>
+        <p style="color:var(--text-2);line-height:1.8;margin-bottom:16px">For those who are blessed with resources, influence and capacity, daan becomes one of the most powerful ways to transform success into meaning.</p>
+        <p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--primary);margin-bottom:4px">A true leader does not ask, &ldquo;How much can I keep?&rdquo;</p>
+        <p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--accent);font-style:italic;margin-bottom:20px">A true leader asks, &ldquo;How many lives can I uplift?&rdquo;</p>
+        <div class="what-card" style="margin-bottom:20px">
+          <div class="check-row"><div class="check-icon">&#10003;</div>Convert your success into meaningful impact</div>
+          <div class="check-row"><div class="check-icon">&#10003;</div>Support people who truly need help</div>
+          <div class="check-row"><div class="check-icon">&#10003;</div>Participate in Dharma karya under the guidance of Brahmarshi Acharya Upendra Ji</div>
+          <div class="check-row"><div class="check-icon">&#10003;</div>Create punya for yourself, your family and future generations</div>
+          <div class="check-row"><div class="check-icon">&#10003;</div>Leave behind a legacy of contribution, not just accumulation</div>
+        </div>
+        <a href="#donate-form" class="btn btn-primary btn-lg">Yes, I Want My Success To Serve A Higher Purpose</a>
+      </div>
+      <div>
+        <img src="images/sacred-occasions-2.png" alt="Sacred giving — leaders and seva" style="width:100%;border-radius:var(--radius-lg);height:440px;object-fit:cover">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ WHAT YOUR CONTRIBUTION SUPPORTS ═══════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label">What Your Contribution Supports</span>
+      <h2 style="font-size:2rem;color:var(--primary);margin-bottom:4px">Your Daan Becomes Food, Education, Healing And Dharma Seva</h2>
+      <div class="divider" style="margin:14px auto 20px"></div>
+      <p style="color:var(--text-2);max-width:620px;margin:0 auto 36px;line-height:1.75">Every contribution to Antar Yog Foundation supports work that touches lives at the physical, mental, social and spiritual levels.</p>
+    </div>
+    <div class="grid-4">
+      <div class="step-card" style="background:var(--bg-alt);border-radius:var(--radius-lg)"><div style="font-size:2rem;margin-bottom:14px">&#127857;</div><h3 class="step-title">Food Distribution</h3><p class="step-desc">Food for the poor, diseased, elderly and differently-abled.</p></div>
+      <div class="step-card" style="background:var(--bg-alt);border-radius:var(--radius-lg)"><div style="font-size:2rem;margin-bottom:14px">&#128138;</div><h3 class="step-title">Healthcare Support</h3><p class="step-desc">Medicines and healthcare for the underprivileged.</p></div>
+      <div class="step-card" style="background:var(--bg-alt);border-radius:var(--radius-lg)"><div style="font-size:2rem;margin-bottom:14px">&#128218;</div><h3 class="step-title">Education</h3><p class="step-desc">Education support for children, orphans and deserving students.</p></div>
+      <div class="step-card" style="background:var(--bg-alt);border-radius:var(--radius-lg)"><div style="font-size:2rem;margin-bottom:14px">&#129492;</div><h3 class="step-title">Spiritual Education</h3><p class="step-desc">Sadhana opportunities and spiritual learning for seekers.</p></div>
+      <div class="step-card" style="background:var(--bg-alt);border-radius:var(--radius-lg)"><div style="font-size:2rem;margin-bottom:14px">&#128717;</div><h3 class="step-title">Daily Essentials</h3><p class="step-desc">Groceries and daily essentials for families in need.</p></div>
+      <div class="step-card" style="background:var(--bg-alt);border-radius:var(--radius-lg)"><div style="font-size:2rem;margin-bottom:14px">&#128328;</div><h3 class="step-title">Dharma Seva</h3><p class="step-desc">Support for Sadhus, Sanyasis, Brahmans and those preserving wisdom.</p></div>
+      <div class="step-card" style="background:var(--bg-alt);border-radius:var(--radius-lg)"><div style="font-size:2rem;margin-bottom:14px">&#127963;</div><h3 class="step-title">Sacred Infrastructure</h3><p class="step-desc">Sacred spaces for sadhana, healing, learning and seva.</p></div>
+      <div class="step-card" style="background:var(--primary);border-radius:var(--radius-lg);display:flex;flex-direction:column;justify-content:center"><p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#fff;margin-bottom:14px;line-height:1.4">Yes, I Want My Daan To Reach Those Who Need It Most</p><a href="#donate-form" class="btn btn-accent" style="font-size:0.85rem;padding:10px 18px">Offer Daan Now</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ VEDIC GIVING + SUPATRA ═══════════════════════════════ -->
+<section class="section section-alt" id="vedic">
+  <div class="container">
+    <div class="grid-2" style="gap:56px;align-items:start">
+      <div>
+        <span class="section-label">The Vedic Way Of Giving</span>
+        <h2 style="font-size:1.9rem;color:var(--primary);margin-bottom:4px">Give With OM TAT SAT Bhav</h2>
+        <div class="divider"></div>
+        <p style="color:var(--text-2);line-height:1.8;margin-bottom:24px">As described in the Bhagavad Gita, daan offered with the right bhav becomes spiritually powerful.</p>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:24px">
+          <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;background:#fff;border-radius:var(--radius);border:1px solid var(--border)"><span style="font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--accent);min-width:40px;font-weight:600">OM</span><p style="color:var(--text-2);line-height:1.7;margin:0">Seeing the Divine in the recipient.</p></div>
+          <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;background:#fff;border-radius:var(--radius);border:1px solid var(--border)"><span style="font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--accent);min-width:40px;font-weight:600">TAT</span><p style="color:var(--text-2);line-height:1.7;margin:0">Offering selflessly, without ego or attachment.</p></div>
+          <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;background:#fff;border-radius:var(--radius);border:1px solid var(--border)"><span style="font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--accent);min-width:40px;font-weight:600">SAT</span><p style="color:var(--text-2);line-height:1.7;margin:0">Giving for the true welfare and upliftment of others.</p></div>
+        </div>
+        <a href="#donate-form" class="btn btn-primary">Yes, I Want To Make My Contribution Sacred</a>
+      </div>
+      <div>
+        <span class="section-label">Supatra Daan</span>
+        <h2 style="font-size:1.9rem;color:var(--primary);margin-bottom:4px">The Highest Daan Is Given Where It Creates The Highest Impact</h2>
+        <div class="divider"></div>
+        <p style="color:var(--text-2);line-height:1.8;margin-bottom:16px">In Sanatan Dharma, the highest form of daan is <strong style="color:var(--primary)">Supatra Daan</strong> &mdash; giving to a deserving person, cause or mission. Wealth offered for Dharma, seva and upliftment becomes immortal.</p>
+        <blockquote style="border-left:3px solid var(--accent);padding:14px 20px;background:#fff;border-radius:0 var(--radius) var(--radius) 0;margin:0 0 20px;font-family:'Playfair Display',serif;font-style:italic;color:var(--primary);font-size:1.05rem;line-height:1.65">Karna, Bali and Vikramaditya are remembered not only for what they possessed, but for what they gave. Their names outlasted their kingdoms.</blockquote>
+        <div class="what-card" style="margin-bottom:20px">
+          <div class="check-row"><div class="check-icon">&#10003;</div>A leader's true legacy is not in riches but in generosity.</div>
+          <div class="check-row"><div class="check-icon">&#10003;</div>A visionary's success is not in knowledge alone but in its selfless use.</div>
+          <div class="check-row"><div class="check-icon">&#10003;</div>A true giver is remembered through the lives transformed by their daan.</div>
+        </div>
+        <a href="#donate-form" class="btn btn-primary">Yes, I Want To Create A Legacy Of Supatra Daan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ DAAN SLABS ═══════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label">Suggested Daan Slabs</span>
+      <h2 style="font-size:2rem;color:var(--primary);margin-bottom:4px">Every Level Of Giving Creates A Different Scale Of Impact</h2>
+      <div class="divider" style="margin:14px auto 32px"></div>
+    </div>
+    <div class="slab-grid">
+      <div class="slab-card" onclick="setSlab(1100)"><div class="slab-amount">&#8377;1,100</div><div class="slab-name">Seva Sankalp</div><p class="slab-desc">A beginning &mdash; an act of intention that joins a larger stream of seva.</p></div>
+      <div class="slab-card" onclick="setSlab(2500)"><div class="slab-amount">&#8377;2,500</div><div class="slab-name">Daan Bhav</div><p class="slab-desc">Food, essentials and care for those who have little.</p></div>
+      <div class="slab-card featured" onclick="setSlab(5100)"><div class="slab-badge">Most Popular</div><div class="slab-amount">&#8377;5,100</div><div class="slab-name">Focused Seva</div><p class="slab-desc">Dedicated support for one focused seva initiative.</p></div>
+      <div class="slab-card" onclick="setSlab(11000)"><div class="slab-amount">&#8377;11,000</div><div class="slab-name">Dharma Daan</div><p class="slab-desc">Meaningful support towards Dharma and seva karya.</p></div>
+      <div class="slab-card" onclick="setSlab(21000)"><div class="slab-amount">&#8377;21,000</div><div class="slab-name">Life Changer</div><p class="slab-desc">Welfare, education or healing support that changes lives.</p></div>
+      <div class="slab-card mahadaan" onclick="setSlab(51000)"><div class="slab-amount">&#8377;51,000+</div><div class="slab-name">Mahadaan</div><p class="slab-desc">A legacy contribution that creates impact long after the moment of giving.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:32px"><a href="#donate-form" class="btn btn-primary btn-lg">Yes, I Want To Offer My Daan Now</a></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ WAYS TO CONTRIBUTE ═══════════════════════════════ -->
+<section class="section section-alt">
+  <div class="container">
+    <span class="section-label">Ways To Contribute</span>
+    <h2 style="font-size:2rem;color:var(--primary);margin-bottom:4px">Choose The Form Of Daan That Matches Your Sankalp</h2>
+    <div class="divider"></div>
+    <p style="color:var(--text-2);max-width:600px;margin-bottom:32px;line-height:1.75">Every donor has a different bhav, capacity and purpose. Antar Yog Daan allows you to contribute in the way that aligns with your intention.</p>
+    <div class="grid-3" style="margin-bottom:24px">
+      <div class="cat-card"><div class="cat-icon"><span style="font-size:1.5rem">&#9889;</span></div><div class="cat-title">One-Time Mahadaan</div><p class="cat-desc">Make a powerful one-time contribution towards the mission of Antar Yog Foundation.</p></div>
+      <div class="cat-card"><div class="cat-icon"><span style="font-size:1.5rem">&#128260;</span></div><div class="cat-title">Monthly Seva Commitment</div><p class="cat-desc">Become a steady supporter. Monthly daan helps sustain meals, welfare, sadhana and healing consistently.</p></div>
+      <div class="cat-card"><div class="cat-icon"><span style="font-size:1.5rem">&#127942;</span></div><div class="cat-title">Annual Patron Contribution</div><p class="cat-desc">Offer a larger annual contribution towards spiritual education, seva and foundation activities.</p></div>
+      <div class="cat-card"><div class="cat-icon"><span style="font-size:1.5rem">&#127873;</span></div><div class="cat-title">Dedicated Daan</div><p class="cat-desc">Contribute in memory of ancestors, on birthdays, anniversaries or as a sankalp for your family's well-being.</p></div>
+      <div class="cat-card"><div class="cat-icon"><span style="font-size:1.5rem">&#127970;</span></div><div class="cat-title">Corporate &amp; CSR Partnership</div><p class="cat-desc">Partner with Antar Yog Foundation for spiritual education, holistic health and Dharma-based nation-building.</p></div>
+      <div style="background:var(--primary);border-radius:var(--radius-lg);padding:24px;display:flex;flex-direction:column;justify-content:center;gap:12px"><p style="font-family:'Playfair Display',serif;font-size:1.15rem;color:#fff;line-height:1.4">Let Your Daan Carry A Name, A Sankalp Or A Family's Blessings</p><p style="font-size:0.85rem;color:rgba(255,255,255,0.7);line-height:1.6">Contribute in memory of ancestors, on birthdays or as a sankalp for your family's well-being.</p><a href="#donate-form" class="btn btn-accent" style="font-size:0.85rem">Yes, I Want To Choose My Daan Sankalp</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ LEGACY ═══════════════════════════════ -->
+<section class="section" style="background:var(--primary);padding:72px 0">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;gap:56px">
+      <div>
+        <span class="section-label" style="color:var(--gold)">Legacy And Dedication Options</span>
+        <h2 style="font-size:2rem;color:#fff;margin-bottom:4px">Let Your Daan Carry A Name, A Sankalp Or A Family's Blessings</h2>
+        <div class="divider" style="background:var(--gold)"></div>
+        <p style="color:rgba(255,255,255,0.75);line-height:1.8;margin-bottom:20px">For selected contribution levels and projects, donors may dedicate their daan in a meaningful way.</p>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:28px">
+          <div style="display:flex;gap:10px;color:rgba(255,255,255,.85);font-size:0.9rem"><span style="color:var(--gold)">&#8212;</span>In memory of parents or ancestors</div>
+          <div style="display:flex;gap:10px;color:rgba(255,255,255,.85);font-size:0.9rem"><span style="color:var(--gold)">&#8212;</span>In the name of your family</div>
+          <div style="display:flex;gap:10px;color:rgba(255,255,255,.85);font-size:0.9rem"><span style="color:var(--gold)">&#8212;</span>For your children's material and spiritual progress</div>
+          <div style="display:flex;gap:10px;color:rgba(255,255,255,.85);font-size:0.9rem"><span style="color:var(--gold)">&#8212;</span>As a birthday, anniversary or milestone contribution</div>
+          <div style="display:flex;gap:10px;color:rgba(255,255,255,.85);font-size:0.9rem"><span style="color:var(--gold)">&#8212;</span>As a sankalp for Dharma, prosperity and inner growth</div>
+          <div style="display:flex;gap:10px;color:rgba(255,255,255,.85);font-size:0.9rem"><span style="color:var(--gold)">&#8212;</span>As a legacy contribution towards sacred spaces and seva infrastructure</div>
+        </div>
+        <a href="#donate-form" class="btn btn-accent btn-lg">Yes, I Want My Daan To Carry A Sacred Sankalp</a>
+      </div>
+      <div>
+        <img src="images/sacred-occasions-2.png" alt="Legacy daan and dedicated giving" style="width:100%;border-radius:var(--radius-lg);height:400px;object-fit:cover;filter:brightness(0.85)">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ TRUST AND TRANSPARENCY ═══════════════════════════════ -->
+<section class="section section-alt" id="trust">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label">Trust And Transparency</span>
+      <h2 style="font-size:2rem;color:var(--primary);margin-bottom:4px">Your Daan Is Handled As A Sacred Responsibility</h2>
+      <div class="divider" style="margin:14px auto 20px"></div>
+      <p style="color:var(--text-2);max-width:580px;margin:0 auto 36px;line-height:1.75">At Antar Yog Foundation, every contribution is treated with the same seriousness and care as the seva it is meant to support.</p>
+    </div>
+    <div class="grid-2" style="align-items:start">
+      <div class="what-card">
+        <div class="check-row"><div class="check-icon">&#10003;</div><div><strong>Registered Foundation</strong> &mdash; Antar Yog Foundation is a registered entity. <em style="color:var(--accent);font-size:.82rem">[Insert registration details]</em></div></div>
+        <div class="check-row"><div class="check-icon">&#10003;</div><div><strong>Tax Benefit Under 80G</strong> &mdash; Donations qualify for tax deduction under Section 80G. <em style="color:var(--accent);font-size:.82rem">[Insert PAN and 80G details]</em></div></div>
+        <div class="check-row"><div class="check-icon">&#10003;</div><div><strong>Official Payment Channels</strong> &mdash; Only through official bank accounts and verified digital payment options. <em style="color:var(--accent);font-size:.82rem">[Insert bank and UPI details]</em></div></div>
+        <div class="check-row"><div class="check-icon">&#10003;</div><div><strong>Donation Receipt</strong> &mdash; A formal receipt is issued for every eligible contribution.</div></div>
+        <div class="check-row"><div class="check-icon">&#10003;</div><div><strong>Impact Communication</strong> &mdash; Donors above a certain level receive periodic updates on how their daan is being used.</div></div>
+        <div class="check-row"><div class="check-icon">&#10003;</div><div><strong>Project-Wise Accountability</strong> &mdash; Specific updates for dedicated seva initiatives.</div></div>
+      </div>
+      <div style="background:var(--primary);border-radius:var(--radius-lg);padding:40px;color:#fff">
+        <p style="font-family:'Playfair Display',serif;font-size:1.7rem;color:#fff;margin-bottom:8px;line-height:1.3">We do not treat your daan as income.</p>
+        <p style="font-family:'Playfair Display',serif;font-size:1.7rem;color:var(--gold);margin-bottom:1.5rem;line-height:1.3">We treat it as trust.</p>
+        <p style="color:rgba(255,255,255,0.72);line-height:1.8;margin-bottom:1.5rem;font-size:0.9rem">Every contribution is treated with the same seriousness and care as the seva it is meant to support.</p>
+        <a href="#donate-form" class="btn btn-accent">Yes, I Want To Donate Securely</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FAQ ═══════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="gap:56px;align-items:start">
+      <div>
+        <span class="section-label">Frequently Asked Questions</span>
+        <h2 style="font-size:2rem;color:var(--primary);margin-bottom:4px">Everything You Need To Know</h2>
+        <div class="divider"></div>
+        <div id="faq-list">
+          <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is my donation eligible for 80G tax deduction?<span class="faq-icon">+</span></div><div class="faq-a">Yes. Donations to Antar Yog Foundation are eligible for tax deduction under Section 80G of the Income Tax Act. You will receive a formal receipt and 80G certificate for eligible contributions. [Insert PAN and 80G details here.]</div></div>
+          <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How do I know my daan is being used properly?<span class="faq-icon">+</span></div><div class="faq-a">Every contribution is directed towards specific seva initiatives. Donors above a certain level receive periodic updates on how their daan is being used. We also provide project-wise accountability for dedicated contributions.</div></div>
+          <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can I dedicate my daan in someone's name?<span class="faq-icon">+</span></div><div class="faq-a">Yes. You can dedicate your daan in memory of ancestors, in the name of your family, for your children's progress, as a birthday or anniversary contribution, or as a sankalp for Dharma, prosperity and inner growth.</div></div>
+          <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What are the payment options?<span class="faq-icon">+</span></div><div class="faq-a">You can contribute through online payment (UPI, net banking, debit/credit card), direct bank transfer (NEFT/RTGS) or offline methods (cash, cheque or in-person). [Insert bank and UPI details here.]</div></div>
+          <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can I set up a recurring monthly daan?<span class="faq-icon">+</span></div><div class="faq-a">Yes. You can choose One-Time, Monthly or Annual frequency for your contribution. Monthly seva commitment helps sustain meals, welfare, sadhana, healing and outreach consistently.</div></div>
+        </div>
+      </div>
+      <div>
+        <img src="images/vedic-learning.png" alt="Vedic learning and sadhana" style="width:100%;border-radius:var(--radius-lg);height:320px;object-fit:cover;margin-bottom:24px">
+        <div style="background:var(--accent-light);border-radius:var(--radius-lg);padding:28px;border:1px solid var(--border)">
+          <h3 style="font-family:'Playfair Display',serif;font-size:1.25rem;color:var(--primary);margin-bottom:10px">Still Have Questions?</h3>
+          <p style="color:var(--text-2);font-size:0.88rem;line-height:1.7;margin-bottom:16px">Our seva team is available to guide you through the process, answer any queries and help you find the right daan opportunity for your sankalp.</p>
+          <a href="mailto:seva@antaryog.org" class="btn btn-outline" style="font-size:0.88rem">Contact Seva Team</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FINAL CTA ═══════════════════════════════ -->
+<section style="background:var(--primary);padding:88px 0">
+  <div class="container text-center">
+    <span class="section-label" style="color:var(--gold)">Transform Lives. Attract Abundance. Leave A Legacy.</span>
+    <h2 style="font-size:clamp(2rem,4vw,3rem);color:#fff;margin-bottom:1rem;line-height:1.2">The opportunity to give is also<br>the opportunity to rise.</h2>
+    <div class="divider" style="margin:0 auto 24px;background:var(--gold)"></div>
+    <p style="color:rgba(255,255,255,0.78);max-width:560px;margin:0 auto 12px;line-height:1.85;font-size:0.97rem">When you offer daan for a higher purpose, you do not lose wealth. You purify it. You multiply its value. You convert it into punya, blessings, impact and legacy.</p>
+    <p style="font-family:'Playfair Display',serif;font-size:1.1rem;font-style:italic;color:rgba(255,255,255,0.85);margin-bottom:36px">Join the Antar Yog Daan Movement and become a contributor to a mission that is transforming minds, transforming lives and transforming Bharat.</p>
+    <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:14px">
+      <a href="#donate-form" class="btn btn-accent btn-lg">Yes, I Want To Offer My Daan Today</a>
+      <a href="mailto:seva@antaryog.org" class="btn btn-secondary btn-lg">Speak To Our Seva Team</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div>
+        <img src="data:image/png;base64,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" class="footer-logo-img" alt="Antar Yog Foundation" />
+        <div class="footer-brand">Antar Yog Foundation</div>
+        <p class="footer-desc">
+          Serving thousands of lives with unconditional love and oneness. Guided by the teachings of Brahmarishi Acharya Upendra Ji — dedicated to spiritual upliftment, human welfare and national progress.
+        </p>
+        <div class="footer-badges">
+          <span class="foot-badge">80G Certified</span>
+          <span class="foot-badge">FCRA Compliant</span>
+          <span class="foot-badge">Registered NGO</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-heading">Seva Categories</div>
+        <ul class="footer-links">
+          <li><a href="#categories">Anna Daan</a></li>
+          <li><a href="#categories">Bal Seva</a></li>
+          <li><a href="#categories">Elder Care</a></li>
+          <li><a href="#categories">Gau Seva</a></li>
+          <li><a href="#categories">Gurukul Daan</a></li>
+          <li><a href="#categories">Aarogya Seva</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-heading">Foundation</div>
+        <ul class="footer-links">
+          <li><a href="https://learn.antaryogfoundation.in" target="_blank">About Us</a></li>
+          <li><a href="https://learn.antaryogfoundation.in/p/our-work-en" target="_blank">Our Work</a></li>
+          <li><a href="https://blogs.antaryogfoundation.in" target="_blank">Blog</a></li>
+          <li><a href="https://learn.antaryogfoundation.in/p/press" target="_blank">Newsroom</a></li>
+          <li><a href="https://learn.antaryogfoundation.in/p/contact" target="_blank">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-heading">Contact</div>
+        <p class="footer-desc" style="margin-bottom:12px;">
+          For queries regarding donations, 80G certificates or partnerships:
+        </p>
+        <p class="footer-desc" style="margin-bottom:6px;">
+          <strong style="color:#fff;">Email:</strong> seva@antaryog.org
+        </p>
+        <p class="footer-desc" style="margin-bottom:24px;">
+          <strong style="color:#fff;">Website:</strong> antaryogfoundation.in
+        </p>
+        <a href="#donate-form" class="btn btn-primary" style="display:inline-flex; font-size:0.88rem; padding:11px 24px;">
+          Donate Now
+        </a>
+      </div>
+
+    </div><!-- end footer-grid -->
+
+    <div class="footer-bottom">
+      <div>&copy; 2025 Antar Yog Foundation. All rights reserved.</div>
+      <div style="display:flex; gap:20px;">
+        <a href="https://learn.antaryogfoundation.in/p/terms" target="_blank" style="color:rgba(255,255,255,0.45); font-size:0.8rem; text-decoration:none;">Terms of Use</a>
+        <a href="https://learn.antaryogfoundation.in/p/privacy" target="_blank" style="color:rgba(255,255,255,0.45); font-size:0.8rem; text-decoration:none;">Privacy Policy</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<button class="back-to-top" id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<!-- ═══════════════ WHATSAPP FLOAT ═══════════════ -->
+<a href="https://wa.me/919XXXXXXXXX?text=Namaste%2C%20I%20have%20a%20query%20about%20Antar%20Yog%20Daan" 
+   class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16 2C8.268 2 2 8.268 2 16c0 2.44.638 4.733 1.755 6.726L2 30l7.478-1.724A13.94 13.94 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm7.22 19.52c-.3.845-1.49 1.548-2.442 1.752-.65.138-1.497.249-4.35-.934-3.65-1.488-6.006-5.19-6.187-5.43-.174-.238-1.46-1.94-1.46-3.7 0-1.76.92-2.627 1.245-2.985a1.31 1.31 0 01.955-.448c.238 0 .476.004.685.013.22.01.515-.083.805.613.3.713 1.02 2.473 1.11 2.652.09.178.148.387.03.625-.12.237-.179.384-.357.593-.178.208-.375.464-.535.623-.178.178-.363.37-.156.726.207.357.92 1.52 1.975 2.462 1.357 1.21 2.5 1.585 2.857 1.763.357.178.565.148.772-.09.208-.238.893-1.042 1.13-1.4.237-.356.475-.297.802-.178.327.119 2.08.981 2.437 1.16.357.178.595.267.683.416.089.148.089.863-.21 1.708z"/>
+  </svg>
+</a>
+
+<script>
+  /* ── Sticky nav shrink + back-to-top ── */
+  const nav = document.getElementById('top-nav');
+  const backTop = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+    backTop.classList.toggle('visible', window.scrollY > 600);
+  });
+
+  /* ── Mobile menu toggle ── */
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('nav-links');
+  if (burger) {
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      burger.innerHTML = navLinks.classList.contains('open') ? '&#x2715;' : '&#9776;';
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        burger.innerHTML = '&#9776;';
+      });
+    });
+  }
+
+  /* ── 2-step form state ── */
+  let selectedAmount = 5100;
+  let formStep = 1; // step 1 = pick amount, step 2 = fill details
+
+  function updateFormStep() {
+    const panel = document.getElementById('donor-details');
+    const btnLabel = document.getElementById('btn-label');
+    if (formStep === 1) {
+      panel.classList.remove('open');
+      btnLabel.textContent = 'Continue';
+    } else {
+      panel.classList.add('open');
+      btnLabel.textContent = 'Proceed to Donate →';
+    }
+  }
+
+  /* ── Amount chip selector with impact hints ── */
+  function pickAmt(el, val) {
+    document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+    el.classList.add('active');
+    selectedAmount = val;
+    document.getElementById('custom-amount').value = '';
+    // Show impact hint
+    const hint = el.dataset.impact;
+    if (hint) {
+      document.getElementById('impact-text').textContent = hint;
+      document.getElementById('impact-hint').style.display = 'flex';
+    }
+  }
+
+  function clearChipSelection() {
+    document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+    selectedAmount = null;
+    document.getElementById('impact-hint').style.display = 'none';
+  }
+
+  /* ── Frequency selector ── */
+  function pickFreq(el) {
+    document.querySelectorAll('.freq-tab').forEach(b => b.classList.remove('active'));
+    el.classList.add('active');
+  }
+
+  /* ── Category filter ── */
+  function filterCats(el, cat) {
+    document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+    document.querySelectorAll('.cat-card').forEach(card => {
+      card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+    });
+  }
+
+  /* ── 2-step donate button ── */
+  function handleDonate() {
+    const customInput = document.getElementById('custom-amount');
+    const amount = customInput.value.replace(/[^\d]/g, '') || selectedAmount;
+    const cat = document.getElementById('daan-category').value;
+
+    if (!amount || Number(amount) < 1) {
+      flashError('Please select or enter a donation amount.');
+      return;
+    }
+    if (!cat) {
+      flashError('Please select a Seva category.');
+      return;
+    }
+
+    if (formStep === 1) {
+      // Advance to step 2
+      formStep = 2;
+      updateFormStep();
+      // Scroll form into view on mobile
+      document.getElementById('donor-details').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      return;
+    }
+
+    // Step 2 — validate donor details
+    const name  = document.getElementById('donor-name').value.trim();
+    const email = document.getElementById('donor-email').value.trim();
+    const phone = document.getElementById('donor-phone').value.trim();
+
+    if (!name)  { flashError('Please enter your full name.'); return; }
+    if (!email || !email.includes('@')) { flashError('Please enter a valid email address.'); return; }
+    if (!phone || phone.replace(/\D/g,'').length < 10) { flashError('Please enter a valid 10-digit mobile number.'); return; }
+
+    // ── Connect Razorpay / Cashfree here ──
+    alert('✅ Proceeding to payment\nAmount: ₹' + Number(amount).toLocaleString('en-IN') + '\nCategory: ' + cat + '\nDonor: ' + name + '\n\nTODO: Integrate Razorpay key here.');
+  }
+
+  function flashError(msg) {
+    const btn = document.getElementById('main-donate-btn');
+    const orig = btn.querySelector('#btn-label').textContent;
+    btn.style.background = '#C0392B';
+    btn.querySelector('#btn-label').textContent = msg;
+    setTimeout(() => {
+      btn.style.background = '';
+      btn.querySelector('#btn-label').textContent = orig;
+    }, 2500);
+  }
+
+  /* ── Wire up donate button ── */
+  const donateBtn = document.getElementById('main-donate-btn');
+  if (donateBtn) donateBtn.addEventListener('click', handleDonate);
+
+  /* ── Progress bar animation ── */
+  const progFill = document.getElementById('prog-fill');
+  if (progFill) {
+    const progObserver = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) {
+        progFill.style.width = progFill.dataset.pct + '%';
+        progObserver.disconnect();
+      }
+    }, { threshold: 0.3 });
+    const wrapper = progFill.closest('.progress-bar');
+    if (wrapper) progObserver.observe(wrapper);
+  }
+
+  /* ── FAQ accordion ── */
+  function toggleFaq(el) {
+    const item = el.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  /* ── Recent donors ticker ── */
+  const donors = [
+    { init: 'RK', name: 'Rakesh K.',   amt: '₹5,100',  cat: 'Anna Daan',     time: '2 min ago' },
+    { init: 'SM', name: 'Savitha M.',  amt: '₹2,500',  cat: 'Bal Seva',      time: '5 min ago' },
+    { init: 'AP', name: 'Ananya P.',   amt: '₹11,000', cat: 'Guru Kripa',    time: '8 min ago' },
+    { init: 'VN', name: 'Vijay N.',    amt: '₹1,100',  cat: 'Gau Seva',      time: '12 min ago'},
+    { init: 'PS', name: 'Priya S.',    amt: '₹21,000', cat: 'Gurukul Daan',  time: '18 min ago'},
+    { init: 'AK', name: 'Anil K.',     amt: '₹5,100',  cat: 'Elder Care',    time: '22 min ago'},
+  ];
+  let tickerIdx = 0;
+  function rotateTicker() {
+    const ticker = document.getElementById('donor-ticker');
+    if (!ticker) return;
+    const d = donors[tickerIdx % donors.length];
+    ticker.innerHTML = `<div class="donor-tick">
+      <div class="donor-avatar-sm">${d.init}</div>
+      <span><strong>${d.name}</strong> offered ${d.amt} for ${d.cat} · ${d.time}</span>
+    </div>`;
+    tickerIdx++;
+  }
+  rotateTicker();
+  setInterval(rotateTicker, 4000);
+
+  /* ── Slab cards click → set amount & scroll to form ── */
+  document.querySelectorAll('.slab-card a').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const slabAmt = this.closest('.slab-card').querySelector('.slab-amt');
+      if (slabAmt) {
+        const raw = slabAmt.textContent.replace(/[^\d]/g, '');
+        if (raw) {
+          selectedAmount = Number(raw);
+          document.querySelectorAll('.amount-btn').forEach(b => {
+            if (b.textContent.replace(/[^\d]/g,'') === raw) b.classList.add('active');
+            else b.classList.remove('active');
+          });
+        }
+      }
+    });
+  });
+
+  /* ── Category card links → set select ── */
+  document.querySelectorAll('.cat-link').forEach(link => {
+    link.addEventListener('click', function() {
+      const title = this.closest('.cat-card')?.querySelector('.cat-title')?.textContent?.trim();
+      if (!title) return;
+      const sel = document.getElementById('daan-category');
+      for (let opt of sel.options) {
+        if (opt.text.toLowerCase().includes(title.split('—')[0].trim().toLowerCase())) {
+          sel.value = opt.value || opt.text;
+          break;
+        }
+      }
+    });
+  });
+
+  /* ── HERO CAROUSEL ── */
+  var heroIdx = 0, heroSlides, heroAuto;
+  function initHeroCarousel() {
+    heroSlides = document.querySelectorAll('#heroCarousel .carousel-slide');
+    if (!heroSlides.length) return;
+    var dc = document.getElementById('heroDots');
+    heroSlides.forEach(function(_, i) {
+      var d = document.createElement('button');
+      d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      d.onclick = function () { goHero(i); };
+      dc.appendChild(d);
+    });
+    heroAuto = setInterval(function () { moveCarousel(1); }, 4500);
+  }
+  function moveCarousel(dir) {
+    if (!heroSlides || !heroSlides.length) return;
+    heroIdx = (heroIdx + dir + heroSlides.length) % heroSlides.length;
+    goHero(heroIdx);
+  }
+  function goHero(i) {
+    heroIdx = i;
+    document.getElementById('heroCarousel').style.transform = 'translateX(-' + (i * 100) + '%)';
+    document.querySelectorAll('#heroDots .carousel-dot').forEach(function (d, j) {
+      d.classList.toggle('active', j === i);
+    });
+    clearInterval(heroAuto);
+    heroAuto = setInterval(function () { moveCarousel(1); }, 4500);
+  }
+
+  /* ── SEVA GALLERY CAROUSEL (3-up on desktop, 1-up on mobile) ── */
+  var sevaIdx = 0, sevaSlides, sevaVisible = 3;
+  function initSevaCarousel() {
+    sevaSlides = document.querySelectorAll('#sevaCarousel .seva-carousel-slide');
+    if (!sevaSlides.length) return;
+    var dc = document.getElementById('sevaDots');
+    var perPage = window.innerWidth <= 760 ? 1 : sevaVisible;
+    var total = Math.ceil(sevaSlides.length / perPage);
+    dc.innerHTML = '';
+    for (var i = 0; i < total; i++) {
+      var d = document.createElement('button');
+      d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      (function (ii) { d.onclick = function () { goSeva(ii); }; })(i);
+      dc.appendChild(d);
+    }
+  }
+  function moveSevaCarousel(dir) {
+    if (!sevaSlides || !sevaSlides.length) return;
+    var perPage = window.innerWidth <= 760 ? 1 : sevaVisible;
+    var total = Math.ceil(sevaSlides.length / perPage);
+    sevaIdx = (sevaIdx + dir + total) % total;
+    goSeva(sevaIdx);
+  }
+  function goSeva(i) {
+    sevaIdx = i;
+    var perPage = window.innerWidth <= 760 ? 1 : sevaVisible;
+    var pct = perPage === 1 ? (i * 100) : (i * perPage * 33.333);
+    document.getElementById('sevaCarousel').style.transform = 'translateX(-' + pct + '%)';
+    document.querySelectorAll('#sevaDots .carousel-dot').forEach(function (d, j) {
+      d.classList.toggle('active', j === i);
+    });
+  }
+
+  window.addEventListener('load', function () {
+    initHeroCarousel();
+    initSevaCarousel();
+  });
+  window.addEventListener('resize', function () {
+    initSevaCarousel();
+  });
+</script>
+</body>
+</html>

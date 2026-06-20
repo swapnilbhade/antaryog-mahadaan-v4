@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Antar Yog Daan | Sacred Giving, Real Impact</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF8F2;
+  --bg-card:#FFFFFF;
+  --ink:#1F2E26;
+  --ink-soft:#5C6B5F;
+  --ink-faint:#8C988E;
+  --gold:#A9762E;
+  --gold-soft:#C99A56;
+  --line:rgba(31,46,38,0.13);
+  --line-soft:rgba(31,46,38,0.07);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Cormorant',serif;line-height:1.22;font-weight:500;color:var(--ink)}
+img{display:block;max-width:100%}
+a{color:inherit}
+
+.container{max-width:1180px;margin:0 auto;padding:0 32px}
+.wrap-narrow{max-width:760px;margin:0 auto;padding:0 32px}
+
+.eyebrow{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px;display:block}
+.rule{width:38px;height:1px;background:var(--gold);border:none;margin:0 0 28px}
+.rule.center{margin:0 auto 28px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:'Inter',sans-serif;font-size:.84rem;font-weight:600;padding:14px 28px;border-radius:2px;text-decoration:none;cursor:pointer;transition:all .2s;letter-spacing:.01em}
+.btn-dark{background:var(--ink);color:var(--bg);border:1px solid var(--ink)}
+.btn-dark:hover{background:#16201A;transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn-outline:hover{background:var(--ink);color:var(--bg)}
+.btn-gold{background:var(--gold);color:#fff;border:1px solid var(--gold)}
+.btn-gold:hover{background:#8F5F22}
+.btn-ghost-light{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5)}
+.btn-ghost-light:hover{background:rgba(255,255,255,.12)}
+
+.nav{position:sticky;top:0;z-index:100;background:rgba(251,248,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;max-width:1180px;margin:0 auto}
+.nav-brand{font-family:'Cormorant',serif;font-size:1.15rem;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:10px}
+.nav-brand img{height:34px;width:auto}
+.nav-links{display:flex;align-items:center;gap:34px}
+.nav-links a{font-size:.82rem;color:var(--ink-soft);text-decoration:none;transition:color .18s;letter-spacing:.01em}
+.nav-links a:hover{color:var(--ink)}
+.nav-mob-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px}
+.nav-mob-toggle span{display:block;width:22px;height:1.5px;background:var(--ink);margin:5px 0}
+.nav-mob-panel{display:none;flex-direction:column;gap:16px}
+.nav-mob-panel.show{display:flex}
+
+.section{padding:96px 0}
+.section-sm{padding:64px 0}
+.bg-card{background:var(--bg-card)}
+.bg-ink{background:var(--ink);color:#fff}
+.bg-ink h2,.bg-ink h3{color:#fff}
+
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+
+.feature{padding:30px 0;border-bottom:1px solid var(--line-soft)}
+.feature:last-child{border-bottom:none}
+.feature h3{font-size:1.1rem;margin-bottom:8px}
+.feature p{font-size:.92rem;color:var(--ink-soft);line-height:1.75;margin:0}
+
+.card{background:var(--bg-card);border:1px solid var(--line);padding:30px}
+.card h3{font-size:1.05rem;margin-bottom:10px}
+.card p{font-size:.88rem;color:var(--ink-soft);line-height:1.7;margin:0}
+
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat-cell{padding:32px 16px;text-align:center;border-right:1px solid var(--line)}
+.stat-cell:last-child{border-right:none}
+.stat-num{font-family:'Cormorant',serif;font-size:1.9rem;color:var(--ink)}
+.stat-lbl{font-size:.74rem;color:var(--ink-faint);margin-top:6px;letter-spacing:.02em}
+
+.cat-card{border:1px solid var(--line);background:var(--bg-card);overflow:hidden;transition:border-color .2s}
+.cat-card:hover{border-color:var(--gold)}
+.cat-card img{width:100%;height:200px;object-fit:cover;filter:grayscale(.08)}
+.cat-icon-block{height:160px;background:#F1ECE0;display:flex;align-items:center;justify-content:center;font-size:1.8rem;color:var(--gold)}
+.cat-body{padding:24px}
+.cat-body h3{font-size:1.05rem;margin-bottom:8px}
+.cat-body p{font-size:.84rem;color:var(--ink-soft);line-height:1.65;margin-bottom:16px;min-height:62px}
+.cat-link{font-size:.8rem;color:var(--gold);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:6px}
+.cat-link:hover{text-decoration:underline}
+
+.divider-label{display:flex;align-items:center;gap:18px;margin:56px 0 32px}
+.divider-label .line{flex:1;height:1px;background:var(--line)}
+.divider-label span{font-family:'Cormorant',serif;font-style:italic;font-size:1.05rem;color:var(--ink-soft);white-space:nowrap}
+
+.donate-panel{background:var(--bg-card);border:1px solid var(--line);padding:36px}
+.donate-panel-title{font-family:'Cormorant',serif;font-size:1.5rem;margin-bottom:6px}
+.donate-panel-sub{font-size:.82rem;color:var(--ink-faint);margin-bottom:24px}
+.field-label{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);display:block;margin-bottom:8px}
+.field-group{margin-bottom:20px}
+.f-select,.f-input{width:100%;border:1px solid var(--line);background:#fff;padding:12px 14px;font-size:.88rem;border-radius:2px;font-family:'Inter',sans-serif;color:var(--ink);outline:none}
+.f-select:focus,.f-input:focus{border-color:var(--gold)}
+.amt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px}
+.amt-btn{border:1px solid var(--line);background:#fff;padding:11px 6px;font-size:.84rem;font-weight:600;color:var(--ink);cursor:pointer;border-radius:2px;transition:all .15s;font-family:'Inter',sans-serif}
+.amt-btn.active,.amt-btn:hover{border-color:var(--ink);background:var(--ink);color:#fff}
+.freq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.freq-btn{border:1px solid var(--line);background:#fff;padding:9px 6px;font-size:.8rem;color:var(--ink-soft);cursor:pointer;border-radius:2px;transition:all .15s;font-family:'Inter',sans-serif}
+.freq-btn.active{border-color:var(--ink);background:var(--ink);color:#fff}
+.donate-submit{width:100%;background:var(--ink);color:#fff;border:none;padding:16px;font-size:.9rem;font-weight:600;cursor:pointer;border-radius:2px;display:flex;align-items:center;justify-content:center;gap:8px;font-family:'Inter',sans-serif}
+.donate-submit:hover{background:#16201A}
+.donate-meta{display:flex;justify-content:center;gap:18px;margin-top:16px;font-size:.74rem;color:var(--ink-faint);flex-wrap:wrap}
+
+.om-row{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--line-soft)}
+.om-row:last-child{border-bottom:none}
+.om-lbl{font-family:'Cormorant',serif;font-size:1.1rem;color:var(--gold);min-width:46px;font-weight:600}
+.om-row p{font-size:.9rem;color:var(--ink-soft);margin:0;line-height:1.7}
+
+.bq{font-family:'Cormorant',serif;font-style:italic;font-size:1.2rem;color:var(--ink);line-height:1.6;border-left:2px solid var(--gold);padding-left:24px;margin:24px 0}
+
+.slab-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line)}
+.slab-cell{padding:30px 20px;border-right:1px solid var(--line);text-align:center;cursor:pointer;transition:background .15s}
+.slab-cell:last-child{border-right:none}
+.slab-cell:hover{background:var(--bg-card)}
+.slab-cell.featured{background:var(--ink);color:#fff}
+.slab-amt{font-family:'Cormorant',serif;font-size:1.7rem}
+.slab-name{font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--gold);margin:6px 0 10px}
+.slab-cell.featured .slab-name{color:var(--gold-soft)}
+.slab-desc{font-size:.78rem;color:var(--ink-soft);line-height:1.6}
+.slab-cell.featured .slab-desc{color:rgba(255,255,255,.7)}
+
+.check-list{display:flex;flex-direction:column;gap:14px;margin:24px 0}
+.check-row{display:flex;gap:12px;align-items:flex-start;font-size:.9rem;color:var(--ink-soft);line-height:1.65}
+.check-mark{color:var(--gold);flex-shrink:0;font-family:'Cormorant',serif;font-weight:600}
+
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{padding:22px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:.95rem;font-weight:500}
+.faq-plus{font-size:1.2rem;color:var(--gold);transition:transform .2s}
+.faq-item.open .faq-plus{transform:rotate(45deg)}
+.faq-a{font-size:.88rem;color:var(--ink-soft);line-height:1.75;max-height:0;overflow:hidden;transition:max-height .25s ease}
+.faq-item.open .faq-a{max-height:300px;padding-bottom:22px}
+
+.footer{background:var(--ink);color:rgba(255,255,255,.78);padding:64px 0 28px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:40px}
+.footer-brand{font-family:'Cormorant',serif;font-size:1.3rem;color:#fff;margin-bottom:14px}
+.footer-head{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--gold-soft);margin-bottom:16px}
+.footer ul{list-style:none}
+.footer li{margin-bottom:10px}
+.footer a{font-size:.84rem;color:rgba(255,255,255,.6);text-decoration:none}
+.footer a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:24px;display:flex;justify-content:space-between;font-size:.76rem;color:rgba(255,255,255,.45);flex-wrap:wrap;gap:10px}
+
+.wa-float{position:fixed;bottom:28px;right:28px;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;z-index:90;box-shadow:0 4px 16px rgba(0,0,0,.2)}
+.wa-float svg{width:26px;height:26px;fill:#fff}
+.btt{position:fixed;bottom:28px;left:28px;width:42px;height:42px;background:var(--ink);color:#fff;border:none;border-radius:50%;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:90}
+
+@media(max-width:900px){
+  .grid-2{grid-template-columns:1fr;gap:40px}
+  .grid-3{grid-template-columns:1fr 1fr;gap:18px}
+  .stat-row{grid-template-columns:repeat(2,1fr)}
+  .stat-cell:nth-child(2){border-right:none}
+  .slab-grid{grid-template-columns:repeat(2,1fr)}
+  .slab-cell:nth-child(2n){border-right:none}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:32px}
+  .nav-links{display:none}
+  .nav-mob-toggle{display:block}
+}
+@media(max-width:600px){
+  .container,.wrap-narrow{padding:0 20px}
+  .section{padding:64px 0}
+  .nav-inner{padding:14px 20px}
+  .grid-3{grid-template-columns:1fr}
+  .stat-row{grid-template-columns:1fr 1fr}
+  .stat-num{font-size:1.5rem}
+  .slab-grid{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr;gap:28px}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .donate-panel{padding:24px}
+  .amt-grid{gap:6px}
+  .om-lbl{min-width:38px}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><img src="images/logo.jpg" alt="Antar Yog Foundation">Antar Yog Foundation</a>
+    <div class="nav-links">
+      <a href="#categories">Daan Opportunities</a>
+      <a href="#why">Why Give</a>
+      <a href="#vedic">Vedic Way</a>
+      <a href="#trust">Transparency</a>
+      <a href="#donate-form" class="btn btn-dark" style="padding:9px 20px">Offer Daan</a>
+    </div>
+    <button class="nav-mob-toggle" onclick="document.getElementById('mobMenu').classList.toggle('show')" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div id="mobMenu" class="nav-mob-panel" style="border-top:1px solid var(--line);padding:18px 32px">
+    <a href="#categories" style="font-size:.88rem;color:var(--ink-soft);text-decoration:none">Daan Opportunities</a>
+    <a href="#why" style="font-size:.88rem;color:var(--ink-soft);text-decoration:none">Why Give</a>
+    <a href="#vedic" style="font-size:.88rem;color:var(--ink-soft);text-decoration:none">Vedic Way</a>
+    <a href="#trust" style="font-size:.88rem;color:var(--ink-soft);text-decoration:none">Transparency</a>
+    <a href="#donate-form" class="btn btn-dark" style="text-align:center">Offer Daan</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section style="padding:72px 0 0">
+  <div class="wrap-narrow" style="text-align:center">
+    <span class="eyebrow">Antar Yog Daan &middot; Sacred Giving</span>
+    <h1 style="font-size:clamp(1.9rem,4.2vw,2.9rem);margin-bottom:18px">&ldquo;The world is interested in givers, not takers.&rdquo;</h1>
+    <p style="font-family:'Cormorant',serif;font-style:italic;color:var(--gold);font-size:1.05rem;margin-bottom:26px">&mdash; Brahmarishi Acharya Upendra Ji</p>
+    <hr class="rule center">
+    <p style="font-size:.96rem;color:var(--ink-soft);max-width:560px;margin:0 auto 14px;line-height:1.85">Your daan is not a transaction. It is a sacred decision to convert your wealth into blessings, impact and a legacy that lives beyond you.</p>
+    <p style="font-size:.92rem;color:var(--ink-soft);max-width:560px;margin:0 auto 30px;line-height:1.85">We work hard to earn, build, protect and grow. But the highest use of wealth is not only in what it gives us. It is in what it allows us to give back. Through <strong style="color:var(--ink)">Antar Yog Daan</strong>, your contribution can become food for the hungry, education for children, care for the elderly, protection for Dharma and a permanent foundation for Guru karya.</p>
+    <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:64px">
+      <a href="#donate-form" class="btn btn-dark">Offer Your Daan</a>
+      <a href="#categories" class="btn btn-outline">Explore Categories</a>
+    </div>
+  </div>
+  <div style="max-width:1180px;margin:0 auto 0;height:440px;overflow:hidden">
+    <img src="images/editorial-sadhu-hero.jpg" alt="Antar Yog Foundation seva — meeting with Sadhus" style="width:100%;height:100%;object-fit:cover">
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stat-row">
+  <div class="stat-cell"><div class="stat-num">80<sup>G</sup></div><div class="stat-lbl">Tax benefit</div></div>
+  <div class="stat-cell"><div class="stat-num">17+</div><div class="stat-lbl">Seva categories</div></div>
+  <div class="stat-cell"><div class="stat-num">100%</div><div class="stat-lbl">Transparent</div></div>
+  <div class="stat-cell"><div class="stat-num">Secure</div><div class="stat-lbl">Payments</div></div>
+</div>
+
+<!-- INTRO STORY ROW -->
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="align-items:center">
+      <div>
+        <span class="eyebrow">Why Antar Yog Daan Is Unique</span>
+        <h2 style="font-size:1.95rem;margin-bottom:8px">A donation that is directed, rooted and accountable</h2>
+        <hr class="rule">
+        <p style="font-size:.92rem;color:var(--ink-soft);line-height:1.85;margin-bottom:18px">Antar Yog Daan is not scattered across vague causes. It is guided by the spiritual principle of <strong style="color:var(--ink)">Supatra Daan</strong>, which means giving to the right recipient, for the right purpose and with the right bhav.</p>
+        <a href="#donate-form" class="btn btn-outline">Yes, I Want My Daan To Create Real Impact</a>
+      </div>
+      <div>
+        <img src="images/premium-gratitude.jpg" alt="Gratitude in action" style="width:100%;height:340px;object-fit:cover">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY UNIQUE FEATURES -->
+<section class="section section-sm bg-card" id="why">
+  <div class="container">
+    <div class="grid-2" style="gap:0">
+      <div class="feature"><h3>Amplified</h3><p>Your contribution becomes part of a collective effort that can serve many lives together.</p></div>
+      <div class="feature"><h3>Rooted in Sanatan Dharma</h3><p>Giving is offered with seva bhav, humility and the sacred intention of upliftment.</p></div>
+      <div class="feature"><h3>Directed towards the truly deserving</h3><p>Careful efforts are made to identify those who genuinely need support.</p></div>
+      <div class="feature"><h3>Spiritually powerful</h3><p>Daan offered with the right bhav creates punya, blessings, peace and prosperity.</p></div>
+      <div class="feature"><h3>Handled with responsibility</h3><p>Contributions are directed towards specific seva initiatives with accountability and care.</p></div>
+      <div class="feature"><h3>Your sankalp matters</h3><p>Every rupee joins a larger stream of seva, reaching those who truly need support.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section" id="categories">
+  <div class="container">
+    <div class="wrap-narrow" style="text-align:center;padding:0;margin-bottom:48px">
+      <span class="eyebrow">Daan Opportunities</span>
+      <h2 style="font-size:1.95rem">Most donors begin here</h2>
+      <hr class="rule center">
+    </div>
+
+    <div class="grid-2" style="margin-bottom:0">
+      <div class="cat-card">
+        <img src="images/editorial-feed-deserving.jpg" alt="Anna Daan">
+        <div class="cat-body">
+          <h3>Anna Daan</h3>
+          <p>Food is the most immediate act of compassion. Your contribution becomes a meal for devotees, seekers, volunteers and those in need.</p>
+          <a href="anna-daan.html" class="cat-link">Yes, I Want To Offer Anna Daan &#8594;</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img src="images/editorial-occasions-1.jpg" alt="Special Occasion Daan">
+        <div class="cat-body">
+          <h3>Special Occasion Daan</h3>
+          <p>Turn birthdays, anniversaries, festivals and milestones into acts of seva. Share your blessings with those who need food, care and support.</p>
+          <a href="special-occasion.html" class="cat-link">Yes, I Want To Share My Celebration Through Seva &#8594;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider-label"><div class="line"></div><span>Mahadaan categories</span><div class="line"></div></div>
+
+    <div class="grid-3">
+      <div class="cat-card">
+        <img src="images/editorial-sadhu-real-2.jpg" alt="Sadhu And Sanyasi Seva">
+        <div class="cat-body">
+          <h3>Sadhu &amp; Sanyasi Seva</h3>
+          <p>Sadhus and Sanyasis renounce everything to keep the spiritual fire of Sanatan Dharma alive. Your daan provides them food, healthcare and dignity.</p>
+          <a href="sadhu-seva.html" class="cat-link">Support The Living Pillars Of Dharma &#8594;</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img src="images/editorial-vedrakshak-1.jpg" alt="Brahman Seva — Ved Rakshak">
+        <div class="cat-body">
+          <h3>Brahman Seva &mdash; Ved Rakshak</h3>
+          <p>Brahmans quietly preserve the Ved, mantra, rituals and Dharma that protect our families and society.</p>
+          <a href="sadhu-seva.html" class="cat-link">Preserve Sanatan Knowledge &#8594;</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img src="images/editorial-bal-nourishment.jpg" alt="Bal Seva">
+        <div class="cat-body">
+          <h3>Bal Seva</h3>
+          <p>Many children dream with empty stomachs and torn notebooks. Your daan can give them food, education, healthcare and the courage to dream again.</p>
+          <a href="bal-seva.html" class="cat-link">Make A Child's Future Better &#8594;</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img src="images/editorial-bal-education.jpg" alt="Orphan Seva">
+        <div class="cat-body">
+          <h3>Orphan Seva</h3>
+          <p>Some children have lost the loving embrace of parents. Your daan can provide food, shelter, education and the warmth of belonging.</p>
+          <a href="orphan-seva.html" class="cat-link">Support An Orphan Child &#8594;</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon-block">&#9855;</div>
+        <div class="cat-body">
+          <h3>Divyang Seva</h3>
+          <p>Many specially abled individuals face daily challenges. Your daan can provide mobility support, healthcare and opportunities for independence.</p>
+          <a href="divyang-seva.html" class="cat-link">Support A Divyang Life &#8594;</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img src="images/suvasini.jpg" alt="Suvasini Seva">
+        <div class="cat-body">
+          <h3>Suvasini Seva</h3>
+          <p>In Sanatan Dharma, a married woman is revered as a living embodiment of Shakti, prosperity and auspiciousness.</p>
+          <a href="suvasini-seva.html" class="cat-link">Honour Divine Shakti &#8594;</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img src="images/karuna.jpg" alt="Karuna Seva">
+        <div class="cat-body">
+          <h3>Karuna Seva</h3>
+          <p>Support food, education, healthcare and essential care for families facing hardship with dignity.</p>
+          <a href="karuna-seva.html" class="cat-link">Serve The Needy &#8594;</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img src="images/elder.jpg" alt="Elder Care Seva">
+        <div class="cat-body">
+          <h3>Elder Care Seva</h3>
+          <p>Support food, healthcare, warmth and care for senior citizens. Help elders live with dignity, comfort and respect.</p>
+          <a href="elder-care.html" class="cat-link">Support Elder Care &#8594;</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img src="images/medical.jpg" alt="Aarogya Seva">
+        <div class="cat-body">
+          <h3>Aarogya Seva</h3>
+          <p>Help provide medical care, medicines, holistic healing and wellness support to those facing illness and hardship.</p>
+          <a href="aarogya-seva.html" class="cat-link">Support Healing &#8594;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider-label"><div class="line"></div><span>Guru karya, Gau seva &amp; Antar Yog initiatives</span><div class="line"></div></div>
+
+    <div class="grid-3">
+      <div class="cat-card">
+        <img src="images/editorial-vedrakshak-2.jpg" alt="Guru Daan">
+        <div class="cat-body">
+          <h3>Guru Daan</h3>
+          <p>Brahmarishi Acharya Upendra Ji's teachings have brought clarity, healing and spiritual direction to countless seekers.</p>
+          <a href="guru-daan.html" class="cat-link">Support Guru Karya Today &#8594;</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img src="images/gau.jpg" alt="Gau Seva">
+        <div class="cat-body">
+          <h3>Gau Seva</h3>
+          <p>Serve Gau Mata through food, shelter, medical care and protection. Your seva preserves Dharma and brings blessings.</p>
+          <a href="gau-seva.html" class="cat-link">Serve Gau Mata &#8594;</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img src="images/books.jpg" alt="Gyan Daan">
+        <div class="cat-body">
+          <h3>Gyan Daan &mdash; Books</h3>
+          <p>Help print and distribute life-transforming books based on Brahmarishi Acharya Upendra Ji's wisdom.</p>
+          <a href="vidya-daan.html" class="cat-link">Spread Spiritual Wisdom &#8594;</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img src="images/bhoomi.jpg" alt="Bhoomi Daan">
+        <div class="cat-body">
+          <h3>Bhoomi Daan</h3>
+          <p>Contribute towards land for a new Antar Yog Ashram where seekers can experience sadhana and inner transformation.</p>
+          <a href="bhoomi-daan.html" class="cat-link">Build A Sacred Legacy &#8594;</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon-block">&#127891;</div>
+        <div class="cat-body">
+          <h3>Gurukul Daan</h3>
+          <p>The Antar Yog Gurukul currently stands as a rented space. Your daan can help make this sacred space permanent.</p>
+          <a href="gurukul-daan.html" class="cat-link">Help Secure The Gurukul &#8594;</a>
+        </div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon-block">&#9997;</div>
+        <div class="cat-body">
+          <h3>Guru Seva</h3>
+          <p>Not all daan is monetary. Offer your abilities towards Guru karya and become part of a living spiritual mission.</p>
+          <a href="guru-seva.html" class="cat-link">Offer Seva &#8594;</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY LEADERS -->
+<section class="section bg-ink">
+  <div class="container">
+    <div class="grid-2" style="align-items:center">
+      <div>
+        <img src="images/premium-sadhana.jpg" alt="Leaders and seva" style="width:100%;height:380px;object-fit:cover">
+      </div>
+      <div>
+        <span class="eyebrow" style="color:var(--gold-soft)">Why Daan Matters For Doers And Leaders</span>
+        <h2 style="font-size:1.9rem;color:#fff;margin-bottom:8px">Great leaders do not only create wealth. They create impact.</h2>
+        <hr class="rule" style="background:var(--gold-soft)">
+        <p style="font-size:.92rem;color:rgba(255,255,255,.72);line-height:1.85;margin-bottom:16px">For those who are blessed with resources, influence and capacity, daan becomes one of the most powerful ways to transform success into meaning.</p>
+        <p style="font-family:'Cormorant',serif;font-size:1.1rem;color:#fff;margin-bottom:4px">A true leader does not ask, &ldquo;How much can I keep?&rdquo;</p>
+        <p style="font-family:'Cormorant',serif;font-size:1.1rem;font-style:italic;color:var(--gold-soft);margin-bottom:24px">A true leader asks, &ldquo;How many lives can I uplift?&rdquo;</p>
+        <div class="check-list">
+          <div class="check-row" style="color:rgba(255,255,255,.78)"><span class="check-mark">&#8212;</span>Convert your success into meaningful impact.</div>
+          <div class="check-row" style="color:rgba(255,255,255,.78)"><span class="check-mark">&#8212;</span>Support people who truly need help.</div>
+          <div class="check-row" style="color:rgba(255,255,255,.78)"><span class="check-mark">&#8212;</span>Participate in Dharma karya under the guidance of Brahmarishi Acharya Upendra Ji.</div>
+          <div class="check-row" style="color:rgba(255,255,255,.78)"><span class="check-mark">&#8212;</span>Create punya for yourself, your family and future generations.</div>
+          <div class="check-row" style="color:rgba(255,255,255,.78)"><span class="check-mark">&#8212;</span>Leave behind a legacy of contribution, not just accumulation.</div>
+        </div>
+        <a href="#donate-form" class="btn btn-gold">Yes, I Want My Success To Serve A Higher Purpose</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOUR CONTRIBUTION SUPPORTS -->
+<section class="section">
+  <div class="container">
+    <div class="wrap-narrow" style="text-align:center;padding:0;margin-bottom:48px">
+      <span class="eyebrow">What Your Contribution Supports</span>
+      <h2 style="font-size:1.95rem">Your daan becomes food, education, healing and Dharma seva</h2>
+      <hr class="rule center">
+      <p style="font-size:.9rem;color:var(--ink-soft);line-height:1.8">Every contribution to Antar Yog Foundation supports work that touches lives at the physical, mental, social and spiritual levels.</p>
+    </div>
+    <div class="grid-2" style="gap:0">
+      <div class="feature"><h3 style="font-size:1rem">Food distribution</h3><p>Food for the poor, diseased, elderly and differently-abled.</p></div>
+      <div class="feature"><h3 style="font-size:1rem">Daily essentials</h3><p>Groceries and daily essentials for families in need.</p></div>
+      <div class="feature"><h3 style="font-size:1rem">Healthcare support</h3><p>Medicines and healthcare support for the underprivileged.</p></div>
+      <div class="feature"><h3 style="font-size:1rem">Education</h3><p>Education support for children, orphans and deserving students.</p></div>
+      <div class="feature"><h3 style="font-size:1rem">Spiritual education</h3><p>Spiritual education and sadhana opportunities for seekers.</p></div>
+      <div class="feature"><h3 style="font-size:1rem">Dharma seva</h3><p>Support for Brahmans, Sadhus, Sanyasis and those preserving spiritual wisdom.</p></div>
+      <div class="feature" style="grid-column:1/-1"><h3 style="font-size:1rem">Sacred infrastructure</h3><p>Sacred infrastructure for sadhana, healing, learning and seva.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DONATE FORM -->
+<section class="section bg-card" id="donate-form">
+  <div class="container">
+    <div class="grid-2" style="align-items:start">
+      <div>
+        <span class="eyebrow">Offer Your Daan</span>
+        <h2 style="font-size:1.95rem;margin-bottom:8px">Choose the form of daan that matches your sankalp</h2>
+        <hr class="rule">
+        <p style="font-size:.92rem;color:var(--ink-soft);line-height:1.85;margin-bottom:24px">Every donor has a different bhav, capacity and purpose. Antar Yog Daan allows you to contribute in the way that aligns with your intention.</p>
+        <div class="feature"><h3>One-time Mahadaan</h3><p>Make a powerful one-time contribution towards the mission of Antar Yog Foundation.</p></div>
+        <div class="feature"><h3>Monthly seva commitment</h3><p>Become a steady supporter. Monthly daan helps sustain meals, welfare, sadhana and healing consistently.</p></div>
+        <div class="feature"><h3>Annual patron contribution</h3><p>Offer a larger annual contribution towards spiritual education, seva and foundation activities.</p></div>
+      </div>
+      <div>
+        <div class="donate-panel">
+          <div class="donate-panel-title">Offer Your Daan</div>
+          <div class="donate-panel-sub">Choose your sankalp and make your contribution</div>
+
+          <div class="field-group">
+            <label class="field-label">Daan category</label>
+            <select class="f-select" id="daan-category">
+              <option value="">Select a seva category</option>
+              <option value="Anna Daan">Anna Daan &mdash; Feed Lives, Offer Seva</option>
+              <option value="Special Occasion Daan">Special Occasion Daan</option>
+              <option value="Sadhu and Sanyasi Seva">Sadhu and Sanyasi Seva</option>
+              <option value="Brahman Seva">Brahman Seva &mdash; Ved Rakshak</option>
+              <option value="Bal Seva">Bal Seva &mdash; Child Welfare</option>
+              <option value="Orphan Seva">Orphan Seva</option>
+              <option value="Divyang Seva">Divyang Seva</option>
+              <option value="Suvasini Seva">Suvasini Seva</option>
+              <option value="Karuna Seva">Karuna Seva &mdash; Needy Families</option>
+              <option value="Elder Care Seva">Elder Care Seva</option>
+              <option value="Aarogya Seva">Aarogya Seva &mdash; Healthcare</option>
+              <option value="Guru Kripa Daan">Guru Kripa Daan</option>
+              <option value="Gau Seva">Gau Seva &mdash; Cow Protection</option>
+              <option value="Gyan Daan">Gyan Daan &mdash; Spiritual Books</option>
+              <option value="Bhoomi Daan">Bhoomi Daan &mdash; Ashram Land</option>
+              <option value="Gurukul Daan">Gurukul Daan</option>
+              <option value="Guru Seva">Guru Seva (Volunteer)</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label">Select amount</label>
+            <div class="amt-grid">
+              <button class="amt-btn" onclick="pickAmt(this,700)">&#8377;700</button>
+              <button class="amt-btn" onclick="pickAmt(this,2100)">&#8377;2,100</button>
+              <button class="amt-btn" onclick="pickAmt(this,5100)">&#8377;5,100</button>
+              <button class="amt-btn" onclick="pickAmt(this,11000)">&#8377;11,000</button>
+              <button class="amt-btn" onclick="pickAmt(this,21000)">&#8377;21,000</button>
+              <button class="amt-btn" onclick="pickAmt(this,51000)">&#8377;51,000</button>
+            </div>
+            <input type="number" class="f-input" id="custom-amount" placeholder="Or enter custom amount (&#8377;)">
+          </div>
+
+          <div class="field-group">
+            <label class="field-label">Frequency</label>
+            <div class="freq-grid">
+              <button class="freq-btn active" onclick="pickFreq(this)">One-Time</button>
+              <button class="freq-btn" onclick="pickFreq(this)">Monthly</button>
+              <button class="freq-btn" onclick="pickFreq(this)">Annual</button>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label">Dedication (optional)</label>
+            <input type="text" class="f-input" placeholder="In memory of / in name of&hellip;">
+          </div>
+
+          <button class="donate-submit" onclick="handleDonate()">Yes, I Want To Offer My Daan Now &#8594;</button>
+          <div class="donate-meta">
+            <span>&#128274; Secure Payment</span>
+            <span>80G Tax Benefit</span>
+            <span>100% Transparent</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VEDIC WAY + SUPATRA -->
+<section class="section" id="vedic">
+  <div class="container">
+    <div class="grid-2" style="align-items:start">
+      <div>
+        <span class="eyebrow">The Vedic Way Of Giving</span>
+        <h2 style="font-size:1.85rem;margin-bottom:8px">Give with OM TAT SAT bhav</h2>
+        <hr class="rule">
+        <p style="font-size:.92rem;color:var(--ink-soft);line-height:1.85;margin-bottom:8px">As described in the Bhagavad Gita, daan offered with the right bhav becomes spiritually powerful.</p>
+        <div class="om-row"><span class="om-lbl">OM</span><p>Seeing the Divine in the recipient.</p></div>
+        <div class="om-row"><span class="om-lbl">TAT</span><p>Offering selflessly, without ego or attachment.</p></div>
+        <div class="om-row"><span class="om-lbl">SAT</span><p>Giving for the true welfare and upliftment of others.</p></div>
+        <p style="font-size:.9rem;color:var(--ink-soft);line-height:1.85;margin:18px 0">When daan is offered with this bhav, it purifies wealth, uplifts the receiver and returns as blessings to the giver.</p>
+        <a href="#donate-form" class="btn btn-outline">Yes, I Want To Make My Contribution Sacred</a>
+      </div>
+      <div>
+        <span class="eyebrow">Supatra Daan</span>
+        <h2 style="font-size:1.85rem;margin-bottom:8px">The highest daan is given where it creates the highest impact</h2>
+        <hr class="rule">
+        <p style="font-size:.92rem;color:var(--ink-soft);line-height:1.85;margin-bottom:8px">In Sanatan Dharma, the highest form of daan is <strong style="color:var(--ink)">Supatra Daan</strong> &mdash; giving to a deserving person, cause or mission. Wealth offered for Dharma, seva and upliftment becomes immortal.</p>
+        <blockquote class="bq">Karna, Bali and Vikramaditya are remembered not only for what they possessed, but for what they gave. Their names outlasted their kingdoms.</blockquote>
+        <div class="check-list">
+          <div class="check-row"><span class="check-mark">&#8212;</span>A leader's true legacy is not in riches but in generosity.</div>
+          <div class="check-row"><span class="check-mark">&#8212;</span>A visionary's success is not in knowledge alone but in its selfless use.</div>
+          <div class="check-row"><span class="check-mark">&#8212;</span>A true giver is remembered through the lives transformed by their daan.</div>
+        </div>
+        <a href="#donate-form" class="btn btn-outline">Yes, I Want To Create A Legacy Of Supatra Daan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DAAN SLABS -->
+<section class="section bg-card">
+  <div class="container">
+    <div class="wrap-narrow" style="text-align:center;padding:0;margin-bottom:48px">
+      <span class="eyebrow">Suggested Daan Slabs</span>
+      <h2 style="font-size:1.95rem">Every level of giving creates a different scale of impact</h2>
+      <hr class="rule center">
+    </div>
+    <div class="slab-grid" style="margin-bottom:0">
+      <div class="slab-cell" onclick="setSlab(1100)"><div class="slab-amt">&#8377;1,100</div><div class="slab-name">Seva Sankalp</div><p class="slab-desc">A beginning &mdash; an act of intention that joins a larger stream of seva.</p></div>
+      <div class="slab-cell" onclick="setSlab(2500)"><div class="slab-amt">&#8377;2,500</div><div class="slab-name">Daan Bhav</div><p class="slab-desc">Food, essentials and care for those who have little.</p></div>
+      <div class="slab-cell featured" onclick="setSlab(5100)"><div class="slab-amt">&#8377;5,100</div><div class="slab-name">Focused Seva</div><p class="slab-desc">Dedicated support for one focused seva initiative.</p></div>
+      <div class="slab-cell" onclick="setSlab(11000)"><div class="slab-amt">&#8377;11,000</div><div class="slab-name">Dharma Daan</div><p class="slab-desc">Meaningful support towards Dharma and seva karya.</p></div>
+    </div>
+    <div class="slab-grid" style="margin-top:-1px">
+      <div class="slab-cell" onclick="setSlab(21000)"><div class="slab-amt">&#8377;21,000</div><div class="slab-name">Life Changer</div><p class="slab-desc">Welfare, education or healing support at a scale that changes lives.</p></div>
+      <div class="slab-cell" onclick="setSlab(51000)"><div class="slab-amt">&#8377;51,000</div><div class="slab-name">Patron Level</div><p class="slab-desc">Patron-level support for high-impact spiritual and social initiatives.</p></div>
+      <div class="slab-cell featured" onclick="setSlab(100000)" style="grid-column:span 2"><div class="slab-amt">&#8377;1,00,000+</div><div class="slab-name">Mahadaan</div><p class="slab-desc">A legacy contribution that creates impact long after the moment of giving.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST AND TRANSPARENCY -->
+<section class="section" id="trust">
+  <div class="container">
+    <div class="grid-2" style="align-items:start">
+      <div>
+        <span class="eyebrow">Trust And Transparency</span>
+        <h2 style="font-size:1.95rem;margin-bottom:8px">Your daan is handled as a sacred responsibility</h2>
+        <hr class="rule">
+        <p style="font-size:.92rem;color:var(--ink-soft);line-height:1.85;margin-bottom:24px">At Antar Yog Foundation, every contribution is treated with the same seriousness and care as the seva it is meant to support.</p>
+        <div class="check-list" style="gap:20px">
+          <div class="check-row"><span class="check-mark">&#10003;</span><div><strong style="color:var(--ink)">Registered Foundation</strong> &mdash; Antar Yog Foundation is a registered entity. <em style="color:var(--gold);font-size:.82rem">[Insert registration details]</em></div></div>
+          <div class="check-row"><span class="check-mark">&#10003;</span><div><strong style="color:var(--ink)">Tax Benefit Under 80G</strong> &mdash; Donations qualify for tax deduction under Section 80G. <em style="color:var(--gold);font-size:.82rem">[Insert PAN and 80G details]</em></div></div>
+          <div class="check-row"><span class="check-mark">&#10003;</span><div><strong style="color:var(--ink)">Official Payment Channels</strong> &mdash; Only through official bank accounts and verified digital payment options.</div></div>
+          <div class="check-row"><span class="check-mark">&#10003;</span><div><strong style="color:var(--ink)">Donation Receipt</strong> &mdash; A formal receipt is issued for every eligible contribution.</div></div>
+          <div class="check-row"><span class="check-mark">&#10003;</span><div><strong style="color:var(--ink)">Impact Communication</strong> &mdash; Donors above a certain level receive periodic updates on how their daan is being used.</div></div>
+          <div class="check-row"><span class="check-mark">&#10003;</span><div><strong style="color:var(--ink)">Project-Wise Accountability</strong> &mdash; Specific updates for dedicated seva initiatives.</div></div>
+        </div>
+      </div>
+      <div style="background:var(--ink);color:#fff;padding:44px">
+        <p style="font-family:'Cormorant',serif;font-size:1.7rem;color:#fff;margin-bottom:6px;line-height:1.3">We do not treat your daan as income.</p>
+        <p style="font-family:'Cormorant',serif;font-size:1.7rem;color:var(--gold-soft);margin-bottom:24px;line-height:1.3;font-style:italic">We treat it as trust.</p>
+        <p style="font-size:.88rem;color:rgba(255,255,255,.65);line-height:1.8;margin-bottom:24px">Every contribution is treated with the same seriousness and care as the seva it is meant to support.</p>
+        <a href="#donate-form" class="btn btn-gold">Yes, I Want To Donate Securely</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section bg-card">
+  <div class="container">
+    <div class="grid-2" style="align-items:start">
+      <div>
+        <span class="eyebrow">Frequently Asked Questions</span>
+        <h2 style="font-size:1.95rem;margin-bottom:8px">Everything you need to know</h2>
+        <hr class="rule">
+      </div>
+      <div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Is my donation eligible for 80G tax deduction?<span class="faq-plus">+</span></div>
+          <div class="faq-a">Yes. Donations to Antar Yog Foundation are eligible for tax deduction under Section 80G of the Income Tax Act. You will receive a formal receipt and 80G certificate for eligible contributions.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">How do I know my daan is being used properly?<span class="faq-plus">+</span></div>
+          <div class="faq-a">Every contribution is directed towards specific seva initiatives. Donors above a certain level receive periodic updates on how their daan is being used.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Can I dedicate my daan in someone's name?<span class="faq-plus">+</span></div>
+          <div class="faq-a">Yes. You can dedicate your daan in memory of ancestors, in the name of your family, for your children's progress, or as a sankalp for Dharma, prosperity and inner growth.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">What are the payment options?<span class="faq-plus">+</span></div>
+          <div class="faq-a">You can contribute through online payment (UPI, net banking, debit/credit card), direct bank transfer (NEFT/RTGS) or offline methods (cash, cheque or in-person).</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Can I set up a recurring monthly daan?<span class="faq-plus">+</span></div>
+          <div class="faq-a">Yes. You can choose One-Time, Monthly or Annual frequency for your contribution. Monthly seva commitment helps sustain meals, welfare, sadhana and healing consistently.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section bg-ink" style="text-align:center">
+  <div class="wrap-narrow" style="text-align:center">
+    <span class="eyebrow" style="color:var(--gold-soft)">Transform Lives. Attract Abundance. Leave A Legacy.</span>
+    <h2 style="font-size:clamp(1.9rem,4vw,2.6rem);color:#fff;margin-bottom:18px;line-height:1.25">The opportunity to give is also the opportunity to rise.</h2>
+    <hr class="rule center" style="background:var(--gold-soft)">
+    <p style="font-size:.92rem;color:rgba(255,255,255,.7);max-width:520px;margin:0 auto 14px;line-height:1.85">When you offer daan for a higher purpose, you do not lose wealth. You purify it. You convert it into punya, blessings, impact and legacy.</p>
+    <p style="font-family:'Cormorant',serif;font-style:italic;font-size:1.05rem;color:rgba(255,255,255,.75);margin-bottom:36px">Join the Antar Yog Daan Movement and become a contributor to a mission that is transforming Bharat.</p>
+    <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap">
+      <a href="#donate-form" class="btn btn-gold">Yes, I Want To Offer My Daan Today</a>
+      <a href="mailto:seva@antaryog.org" class="btn btn-ghost-light">Speak To Our Seva Team</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Antar Yog Foundation</div>
+        <p style="font-size:.85rem;color:rgba(255,255,255,.55);line-height:1.8;max-width:300px">Your daan is a sacred decision to convert your wealth into blessings, impact and a legacy that lives beyond you.</p>
+      </div>
+      <div>
+        <div class="footer-head">Daan categories</div>
+        <ul>
+          <li><a href="anna-daan.html">Anna Daan</a></li>
+          <li><a href="bal-seva.html">Bal Seva</a></li>
+          <li><a href="guru-daan.html">Guru Daan</a></li>
+          <li><a href="gau-seva.html">Gau Seva</a></li>
+          <li><a href="bhoomi-daan.html">Bhoomi Daan</a></li>
+          <li><a href="gurukul-daan.html">Gurukul Daan</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-head">Connect</div>
+        <ul>
+          <li><a href="#trust">Trust &amp; Transparency</a></li>
+          <li><a href="mailto:seva@antaryog.org">Contact Seva Team</a></li>
+          <li style="color:rgba(255,255,255,.4)">80G Tax Benefits</li>
+          <li style="color:rgba(255,255,255,.4)">Donation Receipt</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024 Antar Yog Foundation. All rights reserved.</span>
+      <span>Serving thousands of lives with unconditional love and oneness</span>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/919XXXXXXXXX?text=Namaste%2C%20I%20have%20a%20query%20about%20Antar%20Yog%20Daan" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.78 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.71 13.93c-.24.68-1.41 1.32-1.94 1.4-.5.08-1.13.11-1.83-.12-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.78-4.18-4.93-4.38-.14-.2-1.18-1.57-1.18-3 0-1.43.75-2.13 1.02-2.42.27-.29.59-.36.79-.36.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2.01.89 2.16.07.15.12.33.02.53-.1.2-.15.32-.3.49-.15.17-.31.39-.45.52-.15.14-.3.29-.13.58.17.29.76 1.25 1.63 2.02 1.12.99 2.07 1.3 2.36 1.45.29.14.46.12.63-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.64-.14.26.1 1.64.77 1.92.91.28.14.47.21.54.33.07.12.07.7-.17 1.38z"/></svg>
+</a>
+<button class="btt" id="bttBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#8593;</button>
+<script>
+function pickAmt(el, val) {
+  document.querySelectorAll('.amt-btn').forEach(function(b){ b.classList.remove('active'); });
+  el.classList.add('active');
+  document.getElementById('custom-amount').value = '';
+  window.selectedAmount = val;
+}
+function pickFreq(el) {
+  document.querySelectorAll('.freq-btn').forEach(function(b){ b.classList.remove('active'); });
+  el.classList.add('active');
+}
+function handleDonate() {
+  var amt = document.getElementById('custom-amount').value || window.selectedAmount;
+  var cat = document.getElementById('daan-category').value;
+  if (!cat) { alert('Please select a Daan Category to continue.'); return; }
+  if (!amt) { alert('Please select or enter an amount to continue.'); return; }
+  alert('Redirecting to secure payment for ' + cat + ' \u2014 Rs ' + Number(amt).toLocaleString('en-IN'));
+}
+function setSlab(amt) {
+  document.querySelectorAll('.amt-btn').forEach(function(b){ b.classList.remove('active'); });
+  document.getElementById('custom-amount').value = amt;
+  document.getElementById('donate-form').scrollIntoView({behavior:'smooth', block:'start'});
+}
+function toggleFaq(el) {
+  var item = el.closest('.faq-item');
+  var wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(function(f){ f.classList.remove('open'); });
+  if (!wasOpen) item.classList.add('open');
+}
+window.addEventListener('scroll', function () {
+  var btt = document.getElementById('bttBtn');
+  if (btt) btt.style.display = window.scrollY > 500 ? 'flex' : 'none';
+});
+</script>
+</body></html>
